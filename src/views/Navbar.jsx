@@ -49,14 +49,17 @@ const NavbarStyled = styled.div`
 
 	@media (max-width: 780px) {
 		visibility: visible;
+		flex-wrap: wrap;
 		width: 95%;
 		height: 42px;
 		font-size: 16px;
 		border-radius: 18px;
 		background-color: #d3d1d1;
-		position: absolute;
+		/* position: absolute; */
+		position: fixed;
+		z-index: 10;
+		bottom: 0px;
 
-		bottom: 20px;
 		.merise {
 			background-color: #e22323;
 		}

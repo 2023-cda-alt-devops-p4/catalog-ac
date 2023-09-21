@@ -19,8 +19,8 @@ const Footer = () => {
 	);
 };
 const FooterStyled = styled.div`
-	background-color: #4a4318;
-	height: 30px;
+	background-color: #3a3002;
+	height: 50px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -37,6 +37,8 @@ const FooterStyled = styled.div`
 
 	@media (max-width: 780px) {
 		visibility: hidden;
+		display: none;
+		background-color: #8b0379;
 	}
 `;
 export default Footer;

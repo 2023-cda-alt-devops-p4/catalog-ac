@@ -7,45 +7,59 @@ import Navbar from "../views/Navbar";
 const Header = () => {
 	return (
 		<HeaderStyled>
-			<h3>Header</h3>
-			<div className="mobile-Navbar">
-				<Navbar />
-			</div>
-			<div className="extra-icon-home">
-				<Link to="/">Retourner vers la page d'accueil</Link>
-			</div>
+			<h1>Catalogue de diagrammes UML + Merise </h1>
+			<Navbar className="mobile-Navbar" />
+
+			<Link className="extra-icon-home" to="/">
+				Retourner vers la page d'accueil
+			</Link>
 		</HeaderStyled>
 	);
 };
 
 const HeaderStyled = styled.div`
-	border: 2px solid red;
-	width: 100vw;
-	margin: 30px auto;
+	/* margin: 30px auto; */
+
 	.extra-icon-home {
 		display: flex;
-		/* visibility: hidden; */
+		/* visibility: hidden; 
+		display: none;  */
 	}
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
+
 	@media (max-width: 1023px) {
+		border: 2px solid red;
+		width: 100vw;
+		height: 30vh;
+		background-color: #24f4ea;
 	}
 
 	@media (max-width: 780px) {
-		visibility: hidden;
+		/* visibility: visible;
+		background-color: #395233;
+	 */
+		height: 20vh;
+		h1 {
+			border: 1px solid black;
+			margin: 0px auto;
+			background-color: #efaf6a;
+		}
 
 		.mobile-Navbar {
 			display: flex;
 			visibility: visible;
-			background-color: #85f06d;
+			background-color: #d0f832;
+			height: 100vh;
 		}
 
 		.extra-icon-home {
 			display: flex;
 			visibility: visible;
 			background-color: #e22323;
-			position: absolute;
+			position: fixed;
+			z-index: 10;
 			right: 20px;
 			top: 20px;
 		}
