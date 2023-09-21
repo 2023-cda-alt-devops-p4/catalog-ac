@@ -1,21 +1,29 @@
 import styled from "styled-components";
 import { theme } from "../assets/css/theme";
-
 import { Link } from "react-router-dom";
+import { FaHome, FaLink } from "react-icons/fa";
+import { GoProjectSymlink } from "react-icons/go";
+import { SiUml } from "react-icons/si";
+// import { ImMenu } from "react-icons/im";		<ImMenu className="icon" />
+import { BsFillDiagram3Fill } from "react-icons/bs";
 
 const Navbar = () => {
 	return (
 		<NavbarStyled>
 			<div className="cheatsheet">
+				<GoProjectSymlink className="icon" />
 				<Link to="/cheatsheet">Cheatsheet</Link>
 			</div>
 			<div className="uml">
+				<SiUml className="icon" />
 				<Link to="/uml">UML</Link>
 			</div>
 			<div className="merise">
+				<BsFillDiagram3Fill className="icon" />
 				<Link to="/merise">Merise</Link>
 			</div>
 			<div className="ressources">
+				<FaLink className="icon" />
 				<Link to="/Ressources">Ressources</Link>
 			</div>
 		</NavbarStyled>
@@ -53,7 +61,7 @@ const NavbarStyled = styled.div`
 		height: 42px;
 		font-size: 16px;
 		border-radius: 18px;
-		/* background-color: #d3d1d1; */
+		background-color: #fdfdfd;
 		/* z-index: 10; */
 		position: fixed;
 		bottom: 2px;

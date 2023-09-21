@@ -8,8 +8,6 @@ import Cheatsheet from "./views/Cheatsheet";
 import Ressources from "./views/Ressources";
 import Page404 from "./views/Page404";
 
-import Navbar from "./views/Navbar";
-
 import Uml from "./views/Uml.jsx";
 import Uml1 from "./views/uml/uml1/Uml1.jsx";
 import Uml2 from "./views/uml/uml2/Uml2.jsx";
