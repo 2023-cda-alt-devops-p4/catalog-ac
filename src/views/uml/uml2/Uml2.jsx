@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const Uml2 = () => {
 	return (
-		<div>
+		<div className="container">
 			<h1>Diagramme UML 2</h1>
 			<h2>sous-titre</h2>
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis
@@ -30,4 +31,7 @@ const Uml2 = () => {
 	);
 };
 
+const ContainerUMLStyled = styled.div`
+	height: auto;
+`;
 export default Uml2;

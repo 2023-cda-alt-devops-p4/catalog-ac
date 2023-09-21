@@ -22,7 +22,6 @@ const Page404 = () => {
                     navigate(-1);
                 }}>RETOUR</button>
 
-            {/* <Link to={"/"}>retourner sur la page d'accueil</Link> */}
         </div>
 
 
