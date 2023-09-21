@@ -12,7 +12,7 @@ import Navbar from "./views/Navbar";
 
 import Uml from "./views/Uml.jsx";
 import Uml1 from "./views/uml/uml1/Uml1.jsx";
-import Uml2 from "./views/uml/uml2/uml2.jsx";
+import Uml2 from "./views/uml/uml2/Uml2.jsx";
 
 import Merise from "./views/Merise";
 import Merise1 from "./views/merise/merise1/Merise1";
