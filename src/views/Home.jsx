@@ -25,29 +25,19 @@ const Home = () => {
 };
 
 const HomePageStyled = styled.div`
-	background-color: #f48ce7;
+	/* background-color: #f48ce7; */
 	display: flex;
-	height: 100vh;
-
-	/* flex-direction: column; */
-	/* align-items: center;
-	justify-content: center; */
-	/* font-family: "Amatic SC", cursive; */
-	/* 
-	::before {
-	} */
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-	/*! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 	@media (max-width: 1023px) {
-		background-color: #bfcbbc;
+		/* background-color: #bfcbbc; */
 	}
 
 	@media (max-width: 780px) {
-		background-color: #befbb0;
-
+		/* background-color: #befbb0; */
 	}
 `;
 

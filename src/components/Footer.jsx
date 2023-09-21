@@ -18,7 +18,7 @@ const Footer = () => {
 		</FooterStyled>
 	);
 };
-const FooterStyled = styled.div`
+const FooterStyled = styled.footer`
 	background-color: #3a3002;
 	height: 50px;
 	width: 100%;
@@ -32,13 +32,12 @@ const FooterStyled = styled.div`
 		color: #f5bd3a;
 	}
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-	/*! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 	@media (max-width: 780px) {
 		visibility: hidden;
 		display: none;
-		background-color: #8b0379;
 	}
 `;
 export default Footer;

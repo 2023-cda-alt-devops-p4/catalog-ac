@@ -24,21 +24,23 @@ function App() {
 		<AppStyled>
 			<Router>
 				<Header />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/cheatsheet" element={<Cheatsheet />} />
+				<main className="main">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/cheatsheet" element={<Cheatsheet />} />
 
-					<Route path="/uml" element={<Uml />}>
-						<Route path="/uml/uml1" element={<Uml1 />} />
-						<Route path="/uml/uml2" element={<Uml2 />} />
-					</Route>
-					<Route path="/merise" element={<Merise />}>
-						<Route path="/merise/merise1" element={<Merise1 />} />
-						<Route path="/merise/merise2" element={<Merise2 />} />
-					</Route>
-					<Route path="/ressources" element={<Ressources />} />
-					<Route path="*" element={<Page404 />} />
-				</Routes>
+						<Route path="/uml" element={<Uml />}>
+							<Route path="/uml/uml1" element={<Uml1 />} />
+							<Route path="/uml/uml2" element={<Uml2 />} />
+						</Route>
+						<Route path="/merise" element={<Merise />}>
+							<Route path="/merise/merise1" element={<Merise1 />} />
+							<Route path="/merise/merise2" element={<Merise2 />} />
+						</Route>
+						<Route path="/ressources" element={<Ressources />} />
+						<Route path="*" element={<Page404 />} />
+					</Routes>
+				</main>
 				<Footer />
 			</Router>
 		</AppStyled>
@@ -49,40 +51,30 @@ const AppStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	/* width: 95vw; */
-	width: 100vw;
-	height: calc(100vh - 50px);
-	/*! dimension main - hauteur du header(100) - hauteur du footer(50) = affichage correct du footer  */
 	gap: 5px;
 
-	*,
-	::after,
-	::before {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		text-decoration: none;
-		box-sizing: border-box;
-		-ms-overflow-style: none;
+	.main {
+		width: 100vw;
+		min-height: 90vh;
+		height: auto;
 	}
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-	/*! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 	@media (max-width: 1300px) {
-		background-color: #200444;
+		/* background-color: #200444; */
 		gap: 10px;
 	}
 
 	@media (max-width: 1023px) {
-		background-color: #a302b2;
+		/* background-color: #a302b2; */
 	}
 
 	@media (max-width: 780px) {
-		background-color: #ceaff7;
-		border: 2px solid black;
+		/* background-color: #ceaff7; */
+		/* border: 2px solid black; */
 
 		::-webkit-scrollbar {
 			display: none;
