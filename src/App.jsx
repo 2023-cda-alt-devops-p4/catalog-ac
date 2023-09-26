@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
+import { theme } from "../src/assets/css/theme";
 
 // import des pages
 import Header from "./components/Header";
@@ -7,8 +8,6 @@ import Home from "./views/Home";
 import Cheatsheet from "./views/Cheatsheet";
 import Ressources from "./views/Ressources";
 import Page404 from "./views/Page404";
-
-import Navbar from "./views/Navbar";
 
 import Uml from "./views/Uml.jsx";
 import Uml1 from "./views/uml/uml1/Uml1.jsx";
@@ -52,12 +51,14 @@ const AppStyled = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	gap: 5px;
+	font-family: ${theme.fontFamily.fontDefault}, arial;
 
 	.main {
 		width: 100vw;
 		min-height: 90vh;
 		height: auto;
 	}
+
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */

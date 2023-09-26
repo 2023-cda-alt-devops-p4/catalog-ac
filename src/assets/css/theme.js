@@ -40,6 +40,12 @@ const fonts = {
   P5: "48px",
   P6: "60px",
 }
+
+const fontFamily = {
+  fontTitle: "Philosopher",
+  fontDefault: "Mulish",
+}
+
 const gridUnit = 8
 const borderRadius = {
   subtle: 1,
@@ -60,6 +66,7 @@ const weights = {
 export const theme = {
   colors,
   fonts,
+  fontFamily,
   gridUnit,
   borderRadius,
   shadows,

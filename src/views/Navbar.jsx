@@ -1,21 +1,29 @@
 import styled from "styled-components";
 import { theme } from "../assets/css/theme";
-
 import { Link } from "react-router-dom";
+import { FaHome, FaLink } from "react-icons/fa";
+import { GoProjectSymlink } from "react-icons/go";
+import { SiUml } from "react-icons/si";
+// import { ImMenu } from "react-icons/im";		<ImMenu className="icon" />
+import { BsFillDiagram3Fill } from "react-icons/bs";
 
 const Navbar = () => {
 	return (
 		<NavbarStyled>
-			<div className="cheatsheet">
+			<div className="btn_menu">
+				<GoProjectSymlink className="icon" />
 				<Link to="/cheatsheet">Cheatsheet</Link>
 			</div>
-			<div className="uml">
+			<div className="btn_menu">
+				<SiUml className="icon" />
 				<Link to="/uml">UML</Link>
 			</div>
-			<div className="merise">
+			<div className="btn_menu">
+				<BsFillDiagram3Fill className="icon" />
 				<Link to="/merise">Merise</Link>
 			</div>
-			<div className="ressources">
+			<div className="btn_menu">
+				<FaLink className="icon" />
 				<Link to="/Ressources">Ressources</Link>
 			</div>
 		</NavbarStyled>
@@ -31,6 +39,29 @@ const NavbarStyled = styled.div`
 	justify-content: space-evenly;
 	color: ${theme.colors.primary};
 	border-bottom: 1px solid black;
+	font-family: ${theme.fontFamily.fontTitle};
+	font-weight: 700;
+
+	.icon {
+		border: 1px solid red;
+
+		margin-right: 10px;
+		height: 30px;
+		width: 30px;
+		/* gap: 50px; */
+		display: inline;
+		/* flex-direction: column;
+		 */
+	}
+
+	.btn_menu {
+		border: 2px solid red;
+		display: flex;
+		/* flex-wrap: nowrap; */
+		align-items: center;
+		justify-content: center;
+	}
+
 	/* .extraMenu {
 		display: flex;
 		visibility: hidden;
@@ -53,7 +84,7 @@ const NavbarStyled = styled.div`
 		height: 42px;
 		font-size: 16px;
 		border-radius: 18px;
-		/* background-color: #d3d1d1; */
+		background-color: #fdfdfd;
 		/* z-index: 10; */
 		position: fixed;
 		bottom: 2px;

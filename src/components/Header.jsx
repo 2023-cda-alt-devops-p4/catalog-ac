@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../assets/css/theme";
-
+import { FaHome, FaLink } from "react-icons/fa";
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "../views/Navbar";
 
@@ -12,7 +12,7 @@ const Header = () => {
 				<Navbar className="mobile-Navbar" />
 			</div>
 			<Link className="extra-icon-home" to="/">
-				Retourner vers la page d'accueil
+				<FaHome className="icon" /> Home
 			</Link>
 		</HeaderStyled>
 	);
@@ -50,7 +50,10 @@ const HeaderStyled = styled.header`
 		}
 
 		.extra-icon-home {
-			/* background-color: #e22323; */
+			background-color: #e09a04;
+			border: 1px solid black;
+			border-radius: 10px;
+			padding: 5px;
 			visibility: visible;
 			position: fixed;
 			z-index: 10;
