@@ -27,6 +27,22 @@ const HeaderStyled = styled.header`
 		/* background-color: #24f4ea; */
 		width: 100vw;
 		height: 30vh;
+
+		.extra-icon-home {
+			background-color: #e09a04;
+			border: none;
+			border-radius: 10px;
+			padding: 5px;
+			visibility: visible;
+			position: absolute;
+			z-index: 10;
+			left: 20px;
+			top: 18vh;
+			box-shadow: 3px 3px 10px ${theme.colors.greySemiDark};
+			padding: ${theme.spacing.sm};
+			border: none;
+			border-radius: ${theme.borderRadius.extraRound};
+		}
 	}
 
 	@media (max-width: 780px) {

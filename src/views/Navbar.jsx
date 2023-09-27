@@ -32,8 +32,8 @@ const Navbar = () => {
 
 const NavbarStyled = styled.div`
 	/* border: 1px solid black; */
-	width: 100vw;
-	height: 20vh;
+
+	height: 10vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -69,6 +69,16 @@ const NavbarStyled = styled.div`
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
+
+	@media (max-width: 1400px) {
+		background-color: #ecf807;
+		max-width: 100vw;
+		height: 14vh;
+		display: flex;
+		visibility: visible;
+		border-radius: ${theme.borderRadius.extraRound};
+		box-shadow: 5px 5px 10px #444444;
+	}
 
 	@media (max-width: 1023px) {
 		display: flex;

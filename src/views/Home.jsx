@@ -25,8 +25,9 @@ const Home = () => {
 };
 
 const HomePageStyled = styled.div`
-	/* background-color: #f48ce7; */
+ background-color: #f48ce7; 
 	display: flex;
+	max-width: 100vw;
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */

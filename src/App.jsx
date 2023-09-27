@@ -51,22 +51,25 @@ const AppStyled = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	gap: 5px;
+	border: none;	
+	/* height: 50%;  */
 	font-family: ${theme.fontFamily.fontDefault}, arial;
-
+	background-color: #f6a818;
 	.main {
-		width: 100vw;
-		min-height: 90vh;
-		height: auto;
+		/* max-width: 100vw; */
+		min-height: 70vh;
+		/* height: auto; */
+		background-color: #cabbde;
 	}
-
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 	@media (max-width: 1300px) {
-		/* background-color: #200444; */
-		gap: 10px;
+		/* background-color: #15fbff;
+		min-height: 50vh;
+		gap: 10px; */
 	}
 
 	@media (max-width: 1023px) {
