@@ -46,14 +46,13 @@ const fontFamily = {
   fontDefault: "Mulish",
 }
 
-const gridUnit = 8
 const borderRadius = {
   subtle: 1,
   round: "5px",
   extraRound: "15px",
   circle: "50%",
 }
-const shadows = {}
+
 const weights = {
   light: 300,
   regular: 400,
@@ -67,9 +66,7 @@ export const theme = {
   colors,
   fonts,
   fontFamily,
-  gridUnit,
   borderRadius,
-  shadows,
   weights,
   spacing,
 }

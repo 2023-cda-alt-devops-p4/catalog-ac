@@ -31,7 +31,7 @@ const Navbar = () => {
 };
 
 const NavbarStyled = styled.div`
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	width: 100vw;
 	height: 20vh;
 	display: flex;
@@ -40,11 +40,11 @@ const NavbarStyled = styled.div`
 	color: ${theme.colors.primary};
 	border-bottom: 1px solid black;
 	font-family: ${theme.fontFamily.fontTitle};
-	font-weight: 700;
+	font-weight: ${theme.weights.bold};
+	font-size: ${theme.fonts.P3};
 
 	.icon {
-		border: 1px solid red;
-
+		/* border: 1px solid red; */
 		margin-right: 10px;
 		height: 30px;
 		width: 30px;
@@ -55,9 +55,8 @@ const NavbarStyled = styled.div`
 	}
 
 	.btn_menu {
-		border: 2px solid red;
+		/* border: 2px solid red; */
 		display: flex;
-		/* flex-wrap: nowrap; */
 		align-items: center;
 		justify-content: center;
 	}
