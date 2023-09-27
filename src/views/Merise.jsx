@@ -3,8 +3,17 @@ import { Link, Outlet } from "react-router-dom";
 const Merise = () => {
 	return (
 		<div>
-			<Link to="/merise/merise1">Service Merise1</Link>
-			<Link to="/merise/merise2">Service Merise2</Link>
+			<Link to="/merise/merise1">La méthode MERISE</Link>
+			<Link to="/merise/merise2">Concepts de bases</Link>
+			<Link to="/merise/merise1">
+				Vers une modélisation des Données (niveau Conceptuel)
+			</Link>
+			<Link to="/merise/merise2">Le MCD - MODELE CONCEPTUEL DES DONNEES</Link>
+			<Link to="/merise/merise2">Règles de Passage du MCD au MLD </Link>
+			<Link to="/merise/merise2">LE MLD - MODELE LOGIQUE DES DONNEES</Link>
+			<Link to="/merise/merise2">Règles de Passage du MLD au MPD </Link>
+			<Link to="/merise/merise2">LE MPD - MODELE PHYSIQUE DES DONNEES</Link>
+			<Link to="/merise/merise1">Normalisation & lexique</Link>
 			<div>
 				<Outlet /> {/*  affiche le contenu d'une navigation imbriquée */}
 				<div>

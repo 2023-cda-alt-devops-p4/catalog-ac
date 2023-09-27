@@ -9,8 +9,8 @@ const Merise1 = () => {
 
 	return (
 		<MeriseStyled>
-			<h1>Merise 1</h1>
-			<h2>sous-titre</h2>
+			<h1>La méthode MERISE</h1>
+			<h2>Concepts de bases</h2>
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis
 			officia ratione debitis velit. Dolores quis eos ex consequatur
 			perspiciatis. Dolorum doloribus error deserunt alias in itaque autem

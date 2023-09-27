@@ -20,7 +20,7 @@ const Navbar = () => {
 			</div>
 			<div className="btn_menu">
 				<BsFillDiagram3Fill className="icon" />
-				<Link to="/merise">Merise</Link>
+				<Link to="/merise">MERISE</Link>
 			</div>
 			<div className="btn_menu">
 				<FaLink className="icon" />
