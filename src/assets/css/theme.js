@@ -4,14 +4,11 @@ const colors = {
   semiDarkOrange: "#271504",
   orange: "#f76808",
   greySemiDark: "#444444",
-
-
+  white_peach: "#fff8f4",
+  semiDarkAmber: "#4f3422",
 
   incognito: "#333",
-
-  background_white: "#f5f5f7",
   background_dark: "#292729",
-
   success: "#60bd4f",
   red: "#e25549",
   redSecondary: "#c4151c",

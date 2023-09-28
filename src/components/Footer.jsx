@@ -27,6 +27,8 @@ const FooterStyled = styled.footer`
 	align-items: center;
 	font-size: 18px;
 	color: #fff;
+	width: 100vw;
+	height: 10vh;
 
 	.link_footer {
 		color: #f5bd3a;
@@ -39,5 +41,6 @@ const FooterStyled = styled.footer`
 		visibility: hidden;
 		display: none;
 	}
+
 `;
 export default Footer;
