@@ -47,63 +47,43 @@ function App() {
 }
 
 const AppStyled = styled.div`
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center; */
-	/* gap: 5px; */
-	border: none;
-	/* height: 50%;  */
-	font-family: ${theme.fontFamily.fontDefault}, arial;
-	/* background-color: #f6a818; */
+/* width: 100vw; */
+background-color: ${theme.colors.amber};
+font-family: ${theme.fontFamily.fontDefault}, arial;
 
+	* {
+		border: none;
+		box-sizing: border-box;
+	}
 	.main {
-		/* max-width: 100vw; */
-		
-		min-height: calc((100vh - 30vh)-30vh); 
-		/* height: auto; */
 		min-height: 90vh;
-		background-color: #cabbde;
 	}
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-	 @media (max-width: 2000px) {
+	@media (max-width: 2000px) {
 		.main {
-	 min-height: 65vh;
-		background-color: #9c5af3;
+			min-height: 65vh;
+		}
 	}
-	} 
 
 	@media (max-width: 1023px) {
-		/* background-color: #a302b2; */
-		
-		 .main {
-	 min-height: 70vh;
-		background-color: #7d30e2;
+		.main {
+			min-height: 70vh;
+		}
 	}
-	} 
 
 	@media (max-width: 780px) {
 		width: 100vw;
-		background-color: #55e004;
-		/* min-height: calc((100vh - 25vh)-25vh);
-		max-height: 100vh;	 */
-
-		/* ::-webkit-scrollbar {
-			display: none;	
-		} */
-
-		/* min-height: 100vh; */
-		/* height: auto; */
-		/* background-color: #cca8fc; */
 
 		.main {
-		min-height: 100vh;
-		background-color: #7d30e2;
+			min-height: 100vh;
+		}
 	}
-	}
+
+
 `;
 
 export default App;

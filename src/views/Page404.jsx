@@ -10,7 +10,7 @@ const Page404 = () => {
 			<ErrorpageStyled>
 				<div className="errorDiv"> ▂▃▅▇█▓▒░ ERREUR 404 ░▒▓█▇▅▃▂ </div>
 				<div className="emptyPage">╱╲╱╳╲╱╲ page introuvable ╱╲╱╳╲╱╲</div>
-				<div>( ´•̥̥̥ω•̥̥̥` )</div>
+				<div className="smiley">( ´•̥̥̥ω•̥̥̥` )</div>
 				<div>
 					<button
 						className="linkHome"
@@ -37,104 +37,89 @@ const ErrorpageStyled = styled.div`
 	align-items: center;
 	justify-content: center;
 	max-width: 100vw;
-	/* gap: 10px; */
-	/* font-size: ${theme.fonts.P0};  */
-	background-color: red;
+	gap: 10px;
 
 	.errorDiv {
-		padding-top: ${theme.spacing.xs};
-		font-size: ${theme.fonts.P5};
+		padding-top: ${theme.spacing.sm};
 		color: ${theme.colors.semiDarkOrange};
 		font-family: ${theme.fontFamily.fontTitle}, arial;
-		background-color: red;
 	}
 
 	.emptyPage {
-		font-size: ${theme.fonts.XXS};
+		font-size: ${theme.fonts.XS};
 		color: ${theme.colors.darkOrange};
 		font-family: ${theme.fontFamily.fontTitle};
 	}
+
+	.smiley {
+		margin: 10px auto;
+	}
+
 	img {
-		max-width: 200px;
+		border-radius: ${theme.borderRadius.extraRound};
+		box-shadow: 5px 5px 10px ${theme.colors.greySemiDark};
+	}
+
+	.linkHome {
+		background-color: ${theme.colors.orange};
+		color: ${theme.colors.darkOrange};
+		font-weight: ${theme.weights.semiBold};
+		box-shadow: 3px 3px 10px ${theme.colors.greySemiDark};
+		padding: ${theme.spacing.md};
+		border: none;
+		border-radius: ${theme.borderRadius.extraRound};
 	}
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-	@media (max-width: 1400px) {
-		/* min-height: 90%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 100vw;
-		gap: 25px;
-		font-size: ${theme.fonts.P0};
-		background-color: red; */
-
+	@media (max-width: 2000px) {
 		.errorDiv {
 			padding-top: ${theme.spacing.md};
 			font-size: ${theme.fonts.P5};
-			color: ${theme.colors.semiDarkOrange};
-			font-family: ${theme.fontFamily.fontTitle}, arial;
 		}
 
 		.emptyPage {
 			font-size: ${theme.fonts.P2};
-			color: ${theme.colors.darkOrange};
-			font-family: ${theme.fontFamily.fontTitle};
-		}
-
-		.linkHome {
-			background-color: ${theme.colors.orange};
-			color: ${theme.colors.darkOrange};
-			font-weight: ${theme.weights.semiBold};
-			box-shadow: 3px 3px 10px ${theme.colors.greySemiDark};
-			padding: ${theme.spacing.md};
-			border: none;
-			border-radius: ${theme.borderRadius.extraRound};
-		}
-
-		img {
-			max-width: 350px;
-			border-radius: ${theme.borderRadius.extraRound};
-			box-shadow: 5px 5px 10px #444444;
-		}
-	}
-
-	@media (max-width: 1300px) {
-		gap: 22px;
-		/* background-color: #22e64d; */
-
-		.errorDiv {
-			font-size: ${theme.fonts.P4};
 		}
 
 		img {
 			max-width: 400px;
+			margin: 10px auto;
 		}
 	}
 
 	@media (max-width: 1023px) {
-		/* background-color: #a302b2; */
 		.errorDiv {
-			/* font-size: ${theme.fonts.P3}; */
+			font-size: ${theme.fonts.P3};
 		}
-
 		img {
-			max-width: 350px;
+			max-width: 300px;
 		}
 	}
 
 	@media (max-width: 780px) {
 		min-height: 95vh;
-		background-color: #b29df1;
-		/* border: 2px solid black; */
-
-		::-webkit-scrollbar {
-			display: none;
+		.errorDiv {
+			font-size: ${theme.fonts.P0};
 		}
+
+		.emptyPage {
+			font-size: ${theme.fonts.XXS};
+		}
+
+		.smiley {
+			margin: 3px auto;
+			font-size: ${theme.fonts.XXS};
+		}
+
+		img {
+			max-width: 200px;
+		}
+		/* ::-webkit-scrollbar {
+			display: none;
+		} */
 	}
 `;
 
