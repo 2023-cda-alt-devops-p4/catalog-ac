@@ -1,25 +1,29 @@
 const colors = {
-  dark: "#17161a",
-  incognito: "#333",
-  white: "#fff",
-  background_white: "#f5f5f7",
-  background_dark: "#292729",
-  primary: "#ffa01b",
-  primary_burger: "#ff9f1b",
-  green: "green",
-  success: "#60bd4f",
-  red: "#e25549",
-  redSecondary: "#c4151c",
-  blue: "#51a7e1",
-  greyLight: "#e4e5e9",
-  greyMedium: "#a7a8ad",
-  greySemiDark: "#93a2b1",
-  greyDark: "#6f737e",
-  greyBlue: "#747b91",
+  white: "#fff", darkMint: "#081917",
+  darkOrange: "#1f1206",
+  semiDarkOrange: "#271504",
+  orange: "#f76808",
+  greySemiDark: "#444444",
+  white_peach: "#fff8f4",
+  semiDarkAmber: "#4f3422",
+  amber: "#d6b688",
+  kumquat: "#ffba1a",
+  mint: "#49dfbe",
+
+  // incognito: "#333",
+  // background_dark: "#292729",
+  // success: "#60bd4f",
+  // red: "#e25549",
+  // redSecondary: "#c4151c",
+  // blue: "#51a7e1",
+  // greyLight: "#e4e5e9",
+  // greyMedium: "#a7a8ad",
+  // greyDark: "#6f737e",
+  // greyBlue: "#747b91",
 }
 
 const spacing = {
-  xxs: "4px",
+  xxs: "5px",
   xs: "8px",
   sm: "12px",
   md: "20px",
@@ -46,18 +50,16 @@ const fontFamily = {
   fontDefault: "Mulish",
 }
 
-const gridUnit = 8
 const borderRadius = {
   subtle: 1,
   round: "5px",
-  extraRound: "15px",
+  extraRound: "18px",
   circle: "50%",
 }
-const shadows = {}
+
 const weights = {
   light: 300,
   regular: 400,
-  medium: 500,
   semiBold: 600,
   bold: 700,
   heavy: 800,
@@ -67,9 +69,7 @@ export const theme = {
   colors,
   fonts,
   fontFamily,
-  gridUnit,
   borderRadius,
-  shadows,
   weights,
   spacing,
 }

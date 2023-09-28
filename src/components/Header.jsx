@@ -12,54 +12,80 @@ const Header = () => {
 				<Navbar className="mobile-Navbar" />
 			</div>
 			<Link className="extra-icon-home" to="/">
-				<FaHome className="icon" /> Home
+				<FaHome className="icon" />
 			</Link>
 		</HeaderStyled>
 	);
 };
 
 const HeaderStyled = styled.header`
+	
+	h1 {
+		display: flex;
+		justify-content: center;
+		padding: 7px;
+		background-color: ${theme.colors.semiDarkOrange};
+		color: ${theme.colors.white_peach};
+		font-family: ${theme.fontFamily.fontTitle};
+		font-weight: ${theme.weights.bold};
+		font-size: ${theme.fonts.P3};
+		margin-bottom: 10px;
+	}
+
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
-	/*! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
+	//*! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-	@media (min-width: 781px) and (max-width: 1023px) {
-		/* background-color: #24f4ea; */
-		width: 100vw;
-		height: 30vh;
+	@media (min-width: 782px) {
+		/* width: 100vw; */
+
+		.extra-icon-home {
+			/* visibility: visible; */
+			font-weight: ${theme.weights.bold};
+			border: none;
+			border-radius: ${theme.borderRadius.extraRound};
+			color: ${theme.colors.white_peach};
+			padding: ${theme.spacing.xs};
+			position: absolute;
+			z-index: 10;
+			left: 20px;
+			top: 1vh;
+		}
+
+		.extra-icon-home:hover {
+			box-shadow: 5px 5px 10px #49dfbe;
+		}
+	}
+
+	@media (min-width: 781px) and (max-width: 900px) {
 	}
 
 	@media (max-width: 780px) {
-		.navbar-center {
-			display: flex;
-			justify-content: center;
-		}
-
 		h1 {
-			/* background-color: #efaf6a; */
-			border: 1px solid black;
-			margin: 0px auto;
-			height: 5vh;
-		}
-
-		.mobile-Navbar {
-			/* background-color: #d0f832; */
-			display: flex;
-			visibility: visible;
-			height: 15vh;
+			padding: 5px;
+			font-size: ${theme.fonts.P0};
 		}
 
 		.extra-icon-home {
-			background-color: #e09a04;
-			border: 1px solid black;
-			border-radius: 10px;
-			padding: 5px;
-			visibility: visible;
+			/* visibility: visible; */
+			background-color: ${theme.colors.semiDarkAmber};
+			font-weight: ${theme.weights.bold};
+			border: none;
+			border-radius: ${theme.borderRadius.extraRound};
+			color: ${theme.colors.white_peach};
+			box-shadow: 5px 5px 10px ${theme.colors.white_peach};
+			padding: ${theme.spacing.xxs};
 			position: fixed;
 			z-index: 10;
-			right: 20px;
-			top: 20px;
+			right: 5vw;
+			top: 5vh;
 		}
+
+		@media (max-width: 300px) {
+	
+	}
+
+
 	}
 `;
 export default Header;

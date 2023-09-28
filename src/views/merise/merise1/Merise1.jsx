@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { theme } from "../../../assets/css/theme";
 import { FaCircleArrowUp } from "react-icons/fa6";
 import { BsFillDiagram3Fill } from "react-icons/bs";
 const Merise1 = () => {
@@ -9,26 +10,28 @@ const Merise1 = () => {
 
 	return (
 		<MeriseStyled>
-			<h1>Merise 1</h1>
-			<h2>sous-titre</h2>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis
-			officia ratione debitis velit. Dolores quis eos ex consequatur
-			perspiciatis. Dolorum doloribus error deserunt alias in itaque autem
-			maxime asperiores. Quas suscipit deleniti error, tempora dicta minus ex
-			magni dolores debitis temporibus sunt veritatis fugiat amet voluptatibus
-			rem cum maxime beatae voluptatum ducimus, voluptate, non excepturi?
-			Officiis neque ad inventore!
+			<h1>La méthode MERISE 1111111111111111111</h1>
+			<h2>Concepts de bases</h2>
+			<p>
+				3 découpages sur 4 niveaux communication traitement données niveaux
+				conceptuel : QUE FAIT L’ENTREPRISE ? (étude des fonctions et objectifs
+				de l’e) - niveau le plus stable. organisationnel : QUI FAIT QUOI ? (les
+				postes de travail de l'e, étude de l’organisation) logique (ou externe)
+				: AVEC L’AIR DE QUOI ? (informatique non spécifique/universelle : sans
+				choix de langage de programmation ni de SGBD : maquette des
+				enchaînements d'écran) physique (ou interne) : AVEC QUOI OU COMMENT ?
+				(choix de l’outil informatique, SGBD et système d’exploitation) - moins
+				stable, est soumis à de fréquents changements. vidéo : (pour screen
+				éventuellement)
+				https://www.youtube.com/watch?v=sRujQXD97R4&list=PL5v61AVkUtCa7RluR5Zmi2GuGH98mmyEv&index=4&ab_channel=NacerRAMMI
+			</p>
 			<Link to="/">
 				<img src="https://picsum.photos/320/240" alt="diagramme1" />
 			</Link>
 			<h2>sous-titre</h2>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis
-			officia ratione debitis velit. Dolores quis eos ex consequatur
-			perspiciatis. Dolorum doloribus error deserunt alias in itaque autem
-			maxime asperiores. Quas suscipit deleniti error, tempora dicta minus ex
-			magni dolores debitis temporibus sunt veritatis fugiat amet voluptatibus
-			rem cum maxime beatae voluptatum ducimus, voluptate, non excepturi?
-			Officiis neque ad inventore!
+			Quas suscipit deleniti error, tempora dicta minus ex magni dolores debitis
+			temporibus sunt veritatis fugiat amet voluptatibus rem cum maxime beatae
+			voluptatum ducimus, voluptate, non excepturi? Officiis neque ad inventore!
 			<Link to="/">
 				<img src="https://picsum.photos/320/240" alt="diagramme2" />
 			</Link>
@@ -40,12 +43,16 @@ const Merise1 = () => {
 };
 const MeriseStyled = styled.div`
 	.iconScroll {
-		color: #e09a0469;
-		cursor: pointer;
+		color: ${theme.colors.kumquat};
 		font-size: 3rem;
 		position: fixed;
-		bottom: 50px;
-		right: 30px;
+		bottom: 13vh;
+		right: 5vw;
+	}
+
+	.iconScroll:hover {
+		color: ${theme.colors.mint};
+		cursor: pointer;
 	}
 `;
 export default Merise1;

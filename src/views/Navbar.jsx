@@ -20,7 +20,7 @@ const Navbar = () => {
 			</div>
 			<div className="btn_menu">
 				<BsFillDiagram3Fill className="icon" />
-				<Link to="/merise">Merise</Link>
+				<Link to="/merise">MERISE</Link>
 			</div>
 			<div className="btn_menu">
 				<FaLink className="icon" />
@@ -31,67 +31,87 @@ const Navbar = () => {
 };
 
 const NavbarStyled = styled.div`
-	border: 1px solid black;
-	width: 100vw;
-	height: 20vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	color: ${theme.colors.primary};
-	border-bottom: 1px solid black;
+	margin-bottom: 20px;
 	font-family: ${theme.fontFamily.fontTitle};
-	font-weight: 700;
 
 	.icon {
-		border: 1px solid red;
-
 		margin-right: 10px;
 		height: 30px;
 		width: 30px;
-		/* gap: 50px; */
 		display: inline;
-		/* flex-direction: column;
-		 */
 	}
 
 	.btn_menu {
-		border: 2px solid red;
 		display: flex;
-		/* flex-wrap: nowrap; */
 		align-items: center;
 		justify-content: center;
+		color: ${theme.colors.semiDarkAmber};
 	}
 
-	/* .extraMenu {
-		display: flex;
-		visibility: hidden;
+	/* a {
+		color: ${theme.colors.darkOrange};
+		background-color: ${theme.colors.white_peach};
 	} */
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-	@media (max-width: 1023px) {
+	@media (max-width: 2000px) {
+		/* visibility: visible; */
+		max-width: 100%;
+		margin-left: 20px;
+		height: 14vh;
 		display: flex;
-		visibility: visible;
-		/* background-color: #5aea39; */
+		justify-content: space-evenly;
+		border-radius: ${theme.borderRadius.extraRound};
+		background-color: ${theme.colors.white_peach};
+		box-shadow: 5px 5px 10px ${theme.colors.greySemiDark};
+		/* font-family: ${theme.fontFamily.fontTitle}; */
+		font-weight: ${theme.weights.bold};
+		font-size: ${theme.fonts.P3};
+	}
+
+	@media (max-width: 1023px) {
+		/* visibility: visible; */
+		background-color: ${theme.colors.white_peach};
+		color: ${theme.colors.darkOrange};
+		margin-left: 20px;
+		height: 10vh;
+		font-weight: ${theme.weights.bold};
+		font-size: ${theme.fonts.P3};
 	}
 
 	@media (max-width: 780px) {
-		visibility: visible;
+		/* visibility: visible; */
 		flex-wrap: wrap;
-		width: 100%;
-		height: 42px;
-		font-size: 16px;
-		border-radius: 18px;
-		background-color: #fdfdfd;
-		/* z-index: 10; */
+		height: 8vh;
+		width: 95vw;
+		display: flex;
+		justify-content: space-evenly;
+		font-size: ${theme.fonts.P0};
+		border-radius: ${theme.borderRadius.extraRound};
+		background-color: ${theme.colors.white_peach};
+		box-shadow: -5px -5px 10px 1px ${theme.colors.greySemiDark}; /* offset-x | offset-y | blur-radius | spread-radius | color */
 		position: fixed;
-		bottom: 2px;
-
-		.merise {
-			/* background-color: #e22323; */
-		}
+		bottom: 1vh;
 	}
+
+
+	@media (max-width: 300px) {
+		height: 6vh;
+		font-size: ${theme.fonts.XXS};
+			bottom: 2vh;
+
+		.icon {
+		margin: 2px 0;
+		height: 10px;
+		width: 10px;
+		display: inline;
+	}
+
+	}
+
+
 `;
 export default Navbar;

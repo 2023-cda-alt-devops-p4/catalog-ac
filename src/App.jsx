@@ -47,40 +47,43 @@ function App() {
 }
 
 const AppStyled = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 5px;
-	font-family: ${theme.fontFamily.fontDefault}, arial;
+/* width: 100vw; */
+background-color: ${theme.colors.amber};
+font-family: ${theme.fontFamily.fontDefault}, arial;
 
-	.main {
-		width: 100vw;
-		min-height: 90vh;
-		height: auto;
+	* {
+		border: none;
+		box-sizing: border-box;
 	}
-
+	.main {
+		min-height: 90vh;
+	}
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-	@media (max-width: 1300px) {
-		/* background-color: #200444; */
-		gap: 10px;
+	@media (max-width: 2000px) {
+		.main {
+			min-height: 65vh;
+		}
 	}
 
 	@media (max-width: 1023px) {
-		/* background-color: #a302b2; */
+		.main {
+			min-height: 70vh;
+		}
 	}
 
 	@media (max-width: 780px) {
-		/* background-color: #ceaff7; */
-		/* border: 2px solid black; */
+		width: 100vw;
 
-		::-webkit-scrollbar {
-			display: none;
+		.main {
+			min-height: 100vh;
 		}
 	}
+
+
 `;
 
 export default App;
