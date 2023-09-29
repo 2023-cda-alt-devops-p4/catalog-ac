@@ -14,7 +14,7 @@ const Header = () => {
 			<Link
 				className="extra-icon-home"
 				to="/"
-				aria-label="aller sur la page d'acceuil"
+				aria-label="aller sur la page d'accueil"
 			>
 				<FaHome className="icon" />
 			</Link>
