@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
 import styled from "styled-components";
 import { theme } from "../../../assets/css/theme";
 import { FaCircleArrowUp } from "react-icons/fa6";
-import { BsFillDiagram3Fill } from "react-icons/bs";
+
 
 import Image from "../../../components/Image";
 //import images
@@ -113,7 +111,6 @@ const MeriseStyled = styled.div`
 		list-style-type: decimal;
 		list-style-position: inside;
 		margin-left: 20px;
-		/* gap: 3vh; */
 	}
 
 	.outlet li {
