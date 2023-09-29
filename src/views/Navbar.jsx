@@ -52,7 +52,7 @@ const NavbarStyled = styled.div`
 	box-shadow: 5px 5px 10px ${theme.colors.greySemiDark};
 
 	.icon {
-		margin-right: 10px;
+		margin: 3px 5px;
 		height: 30px;
 		width: 30px;
 		display: inline;
@@ -79,11 +79,10 @@ const NavbarStyled = styled.div`
 	@media (min-width: 1024px) {
 		max-width: 100%;
 		height: 14vh;
+
 		.icon {
-			margin: 3px 5;
 			height: 40px;
 			width: 40px;
-			display: inline;
 		}
 	}
 
@@ -97,6 +96,12 @@ const NavbarStyled = styled.div`
 		height: 8vh;
 		width: 95vw;
 		box-shadow: -5px -5px 10px 1px ${theme.colors.greySemiDark}; /* offset-x | offset-y | blur-radius | spread-radius | color */
+
+		.icon {
+			margin: 3px 0;
+			height: 20px;
+			width: 20px;
+		}
 	}
 
 	@media (max-width: 300px) {
@@ -104,7 +109,7 @@ const NavbarStyled = styled.div`
 		font-size: ${theme.fonts.XXS};
 
 		.icon {
-			margin: 2px 0;
+			margin: 2px 0px;
 			height: 10px;
 			width: 10px;
 			display: inline;

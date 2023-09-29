@@ -55,11 +55,6 @@ const ErrorpageStyled = styled.div`
 		margin: 10px auto;
 	}
 
-	img {
-		border-radius: ${theme.borderRadius.extraRound};
-		box-shadow: 5px 5px 10px ${theme.colors.greySemiDark};
-	}
-
 	.linkHome {
 		background-color: ${theme.colors.orange};
 		color: ${theme.colors.darkOrange};

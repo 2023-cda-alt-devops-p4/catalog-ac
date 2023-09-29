@@ -39,12 +39,6 @@ const Ressources = () => {
 	);
 };
 const RessourcesStyled = styled.div`
-	/* h1 {
-		padding: ${theme.spacing.xs};
-		font-weight: ${theme.weights.bold};
-		font-size: ${theme.fonts.P2};
-		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
-		color: ${theme.colors.white_peach};
-	} */
+
 `;
 export default Ressources;

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../assets/css/theme";
@@ -10,16 +9,7 @@ import Image from "../components/Image";
 import mcdcomplet from "../assets/img/mcdcomplet.gif";
 
 const Merise = () => {
-	// const [imgClicked, setImgClicked] = useState(false);
-
-	// const showImage = () => {
-	// 	setImgClicked(!imgClicked);
-	// };
-
-	// const hideImage = () => {
-	// 	setImgClicked(false);
-	// };
-
+	
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
@@ -29,7 +19,7 @@ const Merise = () => {
 			<section className="row_section">
 				<ul className="left_column">
 					<li>
-						<Link to="/merise/merise1" href="#content">
+						<Link to="/merise/merise1">
 							Concepts de bases
 						</Link>
 					</li>
@@ -89,7 +79,6 @@ const Merise = () => {
 	);
 };
 const MenuStyled = styled.div`
-	
 	.row_section {
 		display: flex;
 		flex-direction: row;
