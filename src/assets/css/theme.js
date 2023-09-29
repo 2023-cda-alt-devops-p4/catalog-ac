@@ -1,16 +1,19 @@
 const colors = {
-  white: "#fff", darkMint: "#081917",
+  greySemiDark: "#444444",
+  darkMint: "#081917",
+  mint: "#49dfbe",
   darkOrange: "#1f1206",
   semiDarkOrange: "#271504",
   orange: "#f76808",
-  greySemiDark: "#444444",
-  white_peach: "#fff8f4",
   semiDarkAmber: "#4f3422",
   amber: "#d6b688",
   kumquat: "#ffba1a",
-  mint: "#49dfbe",
+  vanilla: "#ffecb7",
+  white_peach: "#fff8f4",
+  white: "#fff",
 
-  // incognito: "#333",
+
+
   // background_dark: "#292729",
   // success: "#60bd4f",
   // red: "#e25549",

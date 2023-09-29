@@ -20,7 +20,7 @@ const Uml = () => {
 					</li>
 
 					<li>
-						<Link to="/uml/uml1"></Link>
+						<Link to="/uml/uml1">{/* use case, diag de classe, séquence */}</Link>
 					</li>
 					<li>
 						<Link to="/uml/uml1"></Link>

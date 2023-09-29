@@ -72,6 +72,71 @@ const AppStyled = styled.div`
 		min-height: 90vh;
 	}
 
+	h1 {
+		padding: ${theme.spacing.sm};
+		margin-bottom: ${theme.spacing.sm};
+		font-weight: ${theme.weights.bold};
+		font-size: ${theme.fonts.P2};
+		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
+		color: ${theme.colors.white_peach};
+	}
+
+	a {
+		font-weight: ${theme.weights.regular};
+		font-size: ${theme.fonts.P0};
+		color: ${theme.colors.white_peach};
+	}
+
+	a:hover, 	.btn_menu a:hover {
+		color: ${theme.colors.amber};
+	}
+
+	a:focus {
+		color: ${theme.colors.mint};
+	}
+
+	.container_img {
+		display: flex;
+		justify-content: center;
+	}
+
+	img {
+		width: 50vw;
+		box-shadow: 5px 5px 10px ${theme.colors.darkMint};
+		border-radius: ${theme.borderRadius.round};
+		object-fit: cover;
+	}
+
+	.imgZoom {
+		position: fixed;
+		z-index: 100;
+		box-shadow: 5px 5px 10px ${theme.colors.darkMint};
+		background-color: ${theme.colors.white_peach};
+		border-radius: ${theme.borderRadius.round};
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		object-fit: contain;
+		width: 90vw;
+	}
+
+	p {
+		padding: 2vh 0;
+	}
+
+	.iconScroll {
+		color: ${theme.colors.vanilla};
+		font-size: 3rem;
+		position: fixed;
+		bottom: 13vh;
+		right: 5vw;
+	}
+
+	.iconScroll:hover {
+		color: ${theme.colors.mint};
+		cursor: pointer;
+	}
+
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
@@ -93,6 +158,14 @@ const AppStyled = styled.div`
 
 		.main {
 			min-height: 100vh;
+		}
+	}
+
+	@media (max-width: 300px) {
+		.iconScroll {
+			font-size: 2rem;
+			bottom: 13vh;
+			right: 25vw;
 		}
 	}
 `;
