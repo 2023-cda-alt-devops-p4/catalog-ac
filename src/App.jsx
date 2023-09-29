@@ -55,9 +55,6 @@ const AppStyled = styled.div`
 	*,
 	::after,
 	::before {
-		margin: 0;
-		padding: 0;
-		list-style: none;
 		text-decoration: none;
 		border: none;
 		box-sizing: border-box;
@@ -79,6 +76,7 @@ const AppStyled = styled.div`
 		font-size: ${theme.fonts.P2};
 		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
 		color: ${theme.colors.white_peach};
+		background-color: ${theme.colors.darkMint};
 	}
 
 	a {
@@ -87,7 +85,8 @@ const AppStyled = styled.div`
 		color: ${theme.colors.white_peach};
 	}
 
-	a:hover, 	.btn_menu a:hover {
+	a:hover,
+	.btn_menu a:hover {
 		color: ${theme.colors.amber};
 	}
 
@@ -121,7 +120,7 @@ const AppStyled = styled.div`
 	}
 
 	p {
-		padding: 2vh 0;
+		padding: ${theme.spacing.xs};
 	}
 
 	.iconScroll {
