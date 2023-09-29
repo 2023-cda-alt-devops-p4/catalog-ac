@@ -78,6 +78,8 @@ const Merise = () => {
 		</MenuStyled>
 	);
 };
+
+
 const MenuStyled = styled.div`
 	.row_section {
 		display: flex;
@@ -167,4 +169,5 @@ const MenuStyled = styled.div`
 
 	}
 `;
+
 export default Merise;

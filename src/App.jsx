@@ -79,6 +79,25 @@ const AppStyled = styled.div`
 		background-color: ${theme.colors.darkMint};
 	}
 
+	.outlet h1 {
+		padding: ${theme.spacing.sm};
+		margin-bottom: ${theme.spacing.md};
+		font-weight: ${theme.weights.bold};
+		font-size: ${theme.fonts.P2};
+		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
+		color: ${theme.colors.white_peach};
+	}
+
+	.outlet h2 {
+		padding: ${theme.spacing.xs};
+		font-family: ${theme.fontFamily.fontTitle}, arial;
+		font-weight: ${theme.weights.semibold};
+		font-size: ${theme.fonts.P1};
+		background-color: ${theme.colors.amber};
+		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
+		color: ${theme.colors.darkOrange};
+	}
+
 	a {
 		font-weight: ${theme.weights.regular};
 		font-size: ${theme.fonts.P0};
