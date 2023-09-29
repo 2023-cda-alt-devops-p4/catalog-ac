@@ -12,19 +12,27 @@ const Navbar = () => {
 		<NavbarStyled>
 			<div className="btn_menu">
 				<GoProjectSymlink className="icon" />
-				<Link to="/cheatsheet" aria-label="aller sur la page pense-bête">Cheatsheet</Link>
+				<Link to="/cheatsheet" aria-label="aller sur la page Cheatsheet">
+					Cheatsheet
+				</Link>
 			</div>
 			<div className="btn_menu">
 				<SiUml className="icon" />
-				<Link to="/uml">UML</Link>
+				<Link to="/uml" aria-label="aller sur la page UML">
+					UML
+				</Link>
 			</div>
 			<div className="btn_menu">
 				<BsFillDiagram3Fill className="icon" />
-				<Link to="/merise">MERISE</Link>
+				<Link to="/merise" aria-label="aller sur la page MERISE">
+					MERISE
+				</Link>
 			</div>
 			<div className="btn_menu">
 				<FaLink className="icon" />
-				<Link to="/Ressources">Ressources</Link>
+				<Link to="/Ressources" aria-label="aller sur la page Ressources">
+					Ressources
+				</Link>
 			</div>
 		</NavbarStyled>
 	);
