@@ -47,14 +47,27 @@ function App() {
 }
 
 const AppStyled = styled.div`
-/* width: 100vw; */
-background-color: ${theme.colors.amber};
-font-family: ${theme.fontFamily.fontDefault}, arial;
+	/* width: 100vw; */
+	background-color: ${theme.colors.amber};
+	background-size: cover;
+	font-family: ${theme.fontFamily.fontDefault}, arial;
 
-	* {
+	*,
+	::after,
+	::before {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
 		border: none;
 		box-sizing: border-box;
+		-ms-overflow-style: none;
 	}
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+
 	.main {
 		min-height: 90vh;
 	}
@@ -82,8 +95,6 @@ font-family: ${theme.fontFamily.fontDefault}, arial;
 			min-height: 100vh;
 		}
 	}
-
-
 `;
 
 export default App;
