@@ -57,7 +57,7 @@ const NavbarStyled = styled.div`
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
-	@media (max-width: 2000px) {
+	@media (min-width: 1024px) {
 		/* visibility: visible; */
 		max-width: 100%;
 		margin-left: 20px;
@@ -80,6 +80,8 @@ const NavbarStyled = styled.div`
 		height: 10vh;
 		font-weight: ${theme.weights.bold};
 		font-size: ${theme.fonts.P3};
+		display: flex;
+		justify-content: space-evenly;
 	}
 
 	@media (max-width: 780px) {
@@ -97,21 +99,17 @@ const NavbarStyled = styled.div`
 		bottom: 1vh;
 	}
 
-
 	@media (max-width: 300px) {
 		height: 6vh;
 		font-size: ${theme.fonts.XXS};
-			bottom: 2vh;
+		bottom: 2vh;
 
 		.icon {
-		margin: 2px 0;
-		height: 10px;
-		width: 10px;
-		display: inline;
+			margin: 2px 0;
+			height: 10px;
+			width: 10px;
+			display: inline;
+		}
 	}
-
-	}
-
-
 `;
 export default Navbar;

@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../assets/css/theme";
 import { FaCircleArrowUp } from "react-icons/fa6";
 
+//import images
+import mcdcomplet from "../assets/img/mcdcomplet.gif";
+// import { photoMerise } from "./merise/merise1/Merise1";
+
 const Merise = () => {
+	const [imgClicked, setImgClicked] = useState(false);
+
+	const showImage = () => {
+		setImgClicked(!imgClicked);
+	};
+
+	const hideImage = () => {
+		setImgClicked(false);
+	};
+
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
@@ -14,13 +28,12 @@ const Merise = () => {
 			<section className="row_section">
 				<ul className="left_column">
 					<li>
-						<Link to="/merise/merise1">La méthode MERISE</Link>
+						<Link to="/merise/merise1" href="#content">
+							Concepts de bases
+						</Link>
 					</li>
 					<li>
-						<Link to="/merise/merise2">Concepts de bases</Link>
-					</li>
-					<li>
-						<Link to="/merise/merise1">
+						<Link to="/merise/merise2">
 							Vers une modélisation des Données (niveau Conceptuel)
 						</Link>
 					</li>
@@ -58,8 +71,22 @@ const Merise = () => {
 						d’Entreprise née dans les années 70, à la demande du ministère de
 						l’industrie française, pour les administrations.
 					</p>
-					<Link className="img">
+					{/* <Link className="img">
 						<img src="https://picsum.photos/id/119/320/240" alt="diagramme1" />
+					</Link> */}
+					{/* <div>
+						<img alt="mcd complet" src={mcdcomplet} />
+					</div> */}
+					<Link className="img">
+						<img src={mcdcomplet} alt="mcdcomplet" onClick={showImage} />
+						{imgClicked && (
+							<img
+								src={mcdcomplet}
+								alt="mcdcomplet"
+								className="imgZoom"
+								onClick={hideImage}
+							/>
+						)}
 					</Link>
 				</div>
 				<div className="iconScroll">
@@ -67,7 +94,8 @@ const Merise = () => {
 				</div>
 			</section>
 			<div className="outlet_style">
-				<Outlet /> {/*  affiche le contenu d'une navigation imbriquée */}
+				<Outlet id="content" />{" "}
+				{/*  affiche le contenu d'une navigation imbriquée */}
 			</div>
 		</MenuStyled>
 	);
@@ -107,14 +135,14 @@ const MenuStyled = styled.div`
 		font-family: ${theme.fontFamily.fontTitle};
 	}
 
-	ul {
+	.row_section ul {
 		list-style-type: decimal;
 		list-style-position: inside;
 		margin-left: 20px;
 		gap: 1vh;
 	}
 
-	li {
+	.row_section li {
 		border-radius: ${theme.borderRadius.extraRound};
 		background-color: ${theme.colors.semiDarkOrange};
 		color: ${theme.colors.white_peach};
@@ -149,14 +177,18 @@ const MenuStyled = styled.div`
 		width: 65vw;
 	} */
 
-	.outlet_style {
+	/* .outlet_style {
 		padding: ${theme.spacing.md};
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
 		/* width: 100vw; */
-	}
+	/* width: 70vw; */
+	/* overflow: scroll;  */
+	/* flex-wrap: wrap; */
+	/* background-color: ${theme.colors.orange}; */
+	/* } */
 
 	img {
 		width: 40vw;
@@ -164,20 +196,34 @@ const MenuStyled = styled.div`
 		border-radius: ${theme.borderRadius.round};
 		object-fit: cover; /* ou cover, fill, none */
 	}
-	img:hover {
-		width: 90vw;
-		position: absolute;
+
+	.imgZoom {
+		position: fixed;
+		z-index: 100;
 		box-shadow: 5px 5px 10px ${theme.colors.darkMint};
+		background-color: ${theme.colors.white_peach};
 		border-radius: ${theme.borderRadius.round};
-		/* right: 5vw;
-		bottom: 5vh;  */
-		/* margin: 10px auto; */
-		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		object-fit: contain;
+		width: 90vw;
 	}
+
+	/* img:hover { */
+	/* width: 60vw; */
+	/* position: absolute; */
+	/* box-shadow: 5px 5px 10px ${theme.colors.darkMint};
+		border-radius: ${theme.borderRadius.round}; */
+	/* right: 5vw; */
+	/* bottom: 5vh;  */
+	/* margin: 10px auto; */
+	/* position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		object-fit: contain;
+	}  */
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
@@ -193,23 +239,37 @@ const MenuStyled = styled.div`
 		.row_section {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: flex-start;
+			justify-content: flex-start;
+			width: 100vw;
 			/* justify-content: center; */
+			border: 2px solid blue;
 		}
 		.left_column {
-			width: 80vw;
+			width: 50vw;
 			display: flex;
-			/* flex-direction: column;
-		justify-content: space-evenly; */
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
 			font-size: ${theme.fonts.XS};
+			border: 2px solid red;
 		}
 
-		@media (max-width: 300px) {
-			.iconScroll {
-				font-size: 2rem;
-				bottom: 13vh;
-				right: 25vw;
-			}
+		.outlet_style {
+			/* padding: ${theme.spacing.sm};  */
+			border: 3px solid green;
+
+			width: 100%;
+			/* overflow: scroll; */
+			/* flex-wrap: wrap;  */
+		}
+	}
+
+	@media (max-width: 300px) {
+		.iconScroll {
+			font-size: 2rem;
+			bottom: 13vh;
+			right: 25vw;
 		}
 	}
 `;
