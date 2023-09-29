@@ -73,17 +73,6 @@ const Merise = () => {
 						l’industrie française, pour les administrations.
 					</p>
 
-					{/* <Link className="img">
-						<img src={mcdcomplet} alt="mcdcomplet" onClick={showImage} />
-						{imgClicked && (
-							<img
-								src={mcdcomplet}
-								alt="mcdcomplet"
-								className="imgZoom"
-								onClick={hideImage}
-							/>
-						)}
-					</Link> */}
 					<div className="container_img">
 						<Image src={mcdcomplet} alt="mcd_complet" />
 					</div>
@@ -119,6 +108,7 @@ const MenuStyled = styled.div`
 	}
 
 	.row_section ul {
+		color: ${theme.colors.white_peach};
 		list-style-type: decimal;
 		list-style-position: inside;
 		margin-left: 20px;

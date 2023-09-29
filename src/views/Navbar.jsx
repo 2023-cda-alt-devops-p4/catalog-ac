@@ -12,7 +12,7 @@ const Navbar = () => {
 		<NavbarStyled>
 			<div className="btn_menu">
 				<GoProjectSymlink className="icon" />
-				<Link to="/cheatsheet">Cheatsheet</Link>
+				<Link to="/cheatsheet" aria-label="aller sur la page pense-bête">Cheatsheet</Link>
 			</div>
 			<div className="btn_menu">
 				<SiUml className="icon" />
@@ -32,7 +32,16 @@ const Navbar = () => {
 
 const NavbarStyled = styled.div`
 	margin-bottom: 20px;
+	margin-left: 20px;
+	bottom: 2vh;
+	display: flex;
+	justify-content: space-evenly;
 	font-family: ${theme.fontFamily.fontTitle};
+	font-size: ${theme.fonts.P3};
+	background-color: ${theme.colors.white_peach};
+	color: ${theme.colors.darkMint};
+	border-radius: ${theme.borderRadius.extraRound};
+	box-shadow: 5px 5px 10px ${theme.colors.greySemiDark};
 
 	.icon {
 		margin-right: 10px;
@@ -49,64 +58,42 @@ const NavbarStyled = styled.div`
 	}
 
 	.btn_menu a {
-		font-weight: ${theme.weights.regular};
-		font-size: ${theme.fonts.P1};
+		font-weight: ${theme.weights.heavy};
+		font-size: ${theme.fonts.P3};
 		color: ${theme.colors.darkOrange};
 		background-color: ${theme.colors.white_peach};
-	} 
+	}
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 	@media (min-width: 1024px) {
-		/* visibility: visible; */
 		max-width: 100%;
-		margin-left: 20px;
-		margin-bottom: 20px;
 		height: 14vh;
-		display: flex;
-		justify-content: space-evenly;
-		border-radius: ${theme.borderRadius.extraRound};
-		background-color: ${theme.colors.white_peach};
-		box-shadow: 5px 5px 10px ${theme.colors.greySemiDark};
-		/* font-family: ${theme.fontFamily.fontTitle}; */
-		font-weight: ${theme.weights.bold};
-		font-size: ${theme.fonts.P3};
+		.icon {
+			margin: 3px 5;
+			height: 40px;
+			width: 40px;
+			display: inline;
+		}
 	}
 
 	@media (max-width: 1023px) {
-		/* visibility: visible; */
-		background-color: ${theme.colors.white_peach};
-		color: ${theme.colors.darkOrange};
-		margin-left: 20px;
-		margin-bottom: 20px;
 		height: 10vh;
-		font-weight: ${theme.weights.bold};
-		font-size: ${theme.fonts.P3};
-		display: flex;
-		justify-content: space-evenly;
 	}
 
 	@media (max-width: 780px) {
-		/* visibility: visible; */
 		flex-wrap: wrap;
+		position: fixed;
 		height: 8vh;
 		width: 95vw;
-		display: flex;
-		justify-content: space-evenly;
-		font-size: ${theme.fonts.P0};
-		border-radius: ${theme.borderRadius.extraRound};
-		background-color: ${theme.colors.white_peach};
 		box-shadow: -5px -5px 10px 1px ${theme.colors.greySemiDark}; /* offset-x | offset-y | blur-radius | spread-radius | color */
-		position: fixed;
-		bottom: 1vh;
 	}
 
 	@media (max-width: 300px) {
 		height: 6vh;
 		font-size: ${theme.fonts.XXS};
-		bottom: 2vh;
 
 		.icon {
 			margin: 2px 0;

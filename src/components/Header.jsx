@@ -11,7 +11,11 @@ const Header = () => {
 			<div className="navbar-center">
 				<Navbar className="mobile-Navbar" />
 			</div>
-			<Link className="extra-icon-home" to="/">
+			<Link
+				className="extra-icon-home"
+				to="/"
+				aria-label="aller sur la page d'acceuil"
+			>
 				<FaHome className="icon" />
 			</Link>
 		</HeaderStyled>
@@ -19,7 +23,6 @@ const Header = () => {
 };
 
 const HeaderStyled = styled.header`
-	
 	h1 {
 		display: flex;
 		justify-content: center;
@@ -67,7 +70,6 @@ const HeaderStyled = styled.header`
 		}
 
 		.extra-icon-home {
-			/* visibility: visible; */
 			background-color: ${theme.colors.semiDarkAmber};
 			font-weight: ${theme.weights.bold};
 			border: none;
@@ -82,10 +84,7 @@ const HeaderStyled = styled.header`
 		}
 
 		@media (max-width: 300px) {
-	
-	}
-
-
+		}
 	}
 `;
 export default Header;
