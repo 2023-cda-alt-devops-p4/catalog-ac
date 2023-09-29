@@ -48,10 +48,12 @@ const NavbarStyled = styled.div`
 		color: ${theme.colors.semiDarkAmber};
 	}
 
-	/* a {
+	.btn_menu a {
+		font-weight: ${theme.weights.regular};
+		font-size: ${theme.fonts.P1};
 		color: ${theme.colors.darkOrange};
 		background-color: ${theme.colors.white_peach};
-	} */
+	} 
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
@@ -61,6 +63,7 @@ const NavbarStyled = styled.div`
 		/* visibility: visible; */
 		max-width: 100%;
 		margin-left: 20px;
+		margin-bottom: 20px;
 		height: 14vh;
 		display: flex;
 		justify-content: space-evenly;
@@ -77,6 +80,7 @@ const NavbarStyled = styled.div`
 		background-color: ${theme.colors.white_peach};
 		color: ${theme.colors.darkOrange};
 		margin-left: 20px;
+		margin-bottom: 20px;
 		height: 10vh;
 		font-weight: ${theme.weights.bold};
 		font-size: ${theme.fonts.P3};
