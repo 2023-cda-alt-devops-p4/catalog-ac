@@ -114,7 +114,7 @@ const MenuStyled = styled.div`
 		padding: ${theme.spacing.xxs};
 	}
 
-		.right_column {
+	.right_column {
 		padding: ${theme.spacing.sm};
 		display: flex;
 		flex-direction: column;
@@ -157,7 +157,6 @@ const MenuStyled = styled.div`
 		.outlet_style {
 			/* padding: ${theme.spacing.sm};  */
 			border: 3px solid green;
-
 			width: 100%;
 			/* overflow: scroll; */
 			/* flex-wrap: wrap;  */

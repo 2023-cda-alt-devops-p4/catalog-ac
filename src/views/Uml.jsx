@@ -5,7 +5,7 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 
 import Image from "../components/Image";
 //import images
-import mcdcomplet from "../assets/img/mcdcomplet.gif";
+import diagrammes_uml from "../assets/img/uml/diagrammes_uml.svg";
 
 const Uml = () => {
 	const scrollToTop = () => {
@@ -14,27 +14,39 @@ const Uml = () => {
 
 	return (
 		<MenuStyled>
-			{/* use case, diag de classe, séquence */}
 			<section className="row_section">
 				<ul className="left_column">
 					<li>
-						<Link to="/uml/uml1">use case, diag de classe, séquence</Link>
+						<Link to="/uml/uml1">Concepts importants de l'approche objet</Link>
 					</li>
 					<li>
-						<Link to="/uml/uml2">use case, diag de classe, séquence</Link>
+						<Link to="/uml/uml2">14 diagrammes</Link>
 					</li>
 					<li>
-						<Link to="/merise/merise2">use case, diag de classe, séquence</Link>
+						<Link to="/uml/uml3">Diagramme de cas d'utilisation</Link>
+					</li>
+					<li>
+						<Link to="/uml/uml4">Diagramme de classes</Link>
+					</li>
+					<li>
+						<Link to="/uml/uml5">Diagramme de séquence</Link>
 					</li>
 				</ul>
 
 				<div className="right_column">
-					<h1>La méthode </h1>
-					<p></p>
-
+					<h1>UML - Unified Modeling Language</h1>
+					<h2>
+						Langage visuel dédié à la spécification, la construction et la
+						documentation des artefacts d’un système logiciel
+					</h2>
+					<p>Langages de modélisation basés sur les graphes</p>
 					<div className="container_img">
-						<Image src={mcdcomplet} alt="mcd_complet" />
+						<Image src={diagrammes_uml} alt="diagrammes_uml" />
 					</div>
+
+					<em>Attention : UML est un langage... pas une méthode </em>
+					<p>Version 1.0 d’UML (Unified Modeling Language) en janvier 1997</p>
+					<p>Version 2.5.1 en 2017</p>
 				</div>
 				<div className="iconScroll">
 					<FaCircleArrowUp onClick={scrollToTop} />
@@ -94,11 +106,6 @@ const MenuStyled = styled.div`
 	}
 
 	@media (max-width: 300px) {
-		.iconScroll {
-			font-size: 2rem;
-			bottom: 13vh;
-			right: 25vw;
-		}
 	}
 `;
 export default Uml;

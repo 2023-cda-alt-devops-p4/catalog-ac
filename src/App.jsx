@@ -72,11 +72,38 @@ const AppStyled = styled.div`
 	h1 {
 		padding: ${theme.spacing.sm};
 		margin-bottom: ${theme.spacing.sm};
+		/* font-family: ${theme.fontFamily.fontTitle}, arial; */
 		font-weight: ${theme.weights.bold};
 		font-size: ${theme.fonts.P2};
 		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
 		color: ${theme.colors.white_peach};
 		background-color: ${theme.colors.darkMint};
+	}
+
+	h2 {
+		padding: ${theme.spacing.xs};
+		margin-bottom: ${theme.spacing.sm};
+		/* font-family: ${theme.fontFamily.fontTitle}, arial; */
+		font-weight: ${theme.weights.bold};
+		font-size: ${theme.fonts.P1};
+		color: ${theme.colors.darkOrange};
+	}
+
+	h3 {
+		margin-top: ${theme.spacing.md};
+		font-weight: ${theme.weights.bold};
+		font-size: ${theme.fonts.P1};
+		color: ${theme.colors.darkMint};
+	}
+
+	.outlet {
+		background-color: ${theme.colors.vanilla};
+		padding: ${theme.spacing.md};
+		padding-bottom: 15vh;
+		flex-wrap: wrap;
+		margin: 10px auto;
+		margin-right: 10vh;
+		min-width: 100vw;
 	}
 
 	.outlet h1 {
@@ -89,13 +116,25 @@ const AppStyled = styled.div`
 	}
 
 	.outlet h2 {
-		padding: ${theme.spacing.xs};
+		/* padding: ${theme.spacing.xs}; */
 		font-family: ${theme.fontFamily.fontTitle}, arial;
-		font-weight: ${theme.weights.semibold};
+		font-weight: ${theme.weights.bold};
 		font-size: ${theme.fonts.P1};
 		background-color: ${theme.colors.amber};
 		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
 		color: ${theme.colors.darkOrange};
+		margin-top: ${theme.spacing.md};
+	}
+
+	.outlet ul {
+		padding: ${theme.spacing.xs};
+		list-style-type: decimal;
+		list-style-position: inside;
+		margin-left: 20px;
+	}
+
+	.outlet li {
+		padding: ${theme.spacing.xs};
 	}
 
 	a {
@@ -142,8 +181,13 @@ const AppStyled = styled.div`
 		padding: ${theme.spacing.xs};
 	}
 
+	em {
+		padding: ${theme.spacing.xs};
+		font-weight: ${theme.weights.bold};
+	}
+
 	.iconScroll {
-		color: ${theme.colors.vanilla};
+		color: ${theme.colors.kumquat};
 		font-size: 3rem;
 		position: fixed;
 		bottom: 13vh;
@@ -183,7 +227,6 @@ const AppStyled = styled.div`
 		.iconScroll {
 			font-size: 2rem;
 			bottom: 13vh;
-			right: 25vw;
 		}
 	}
 `;
