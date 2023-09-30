@@ -9,7 +9,6 @@ import merise_niveaux from "../../../assets/img/merise_niveaux.png";
 import merise_decoupage_niveaux from "../../../assets/img/merise_decoupage_niveaux.png";
 
 const Merise1 = () => {
-
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
@@ -90,21 +89,21 @@ const MeriseStyled = styled.div`
 		min-width: 100vw;
 	}
 
-	.outlet h1 {
+	/* .outlet h1 {
 		padding: ${theme.spacing.sm};
 		margin-bottom: ${theme.spacing.md};
 		font-weight: ${theme.weights.bold};
 		font-size: ${theme.fonts.P2};
 		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
 		color: ${theme.colors.white_peach};
-	}
+	} */
 
-	.outlet h2 {
+	/* .outlet h2 {
 		padding: ${theme.spacing.xs};
 		font-weight: ${theme.weights.bold};
 		font-size: ${theme.fonts.P1};
 		color: ${theme.colors.white_peach};
-	}
+	} */
 
 	.outlet ul {
 		padding: ${theme.spacing.xs};
