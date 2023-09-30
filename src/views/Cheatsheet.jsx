@@ -4,7 +4,7 @@ import { theme } from "../assets/css/theme";
 
 import Image from "../components/Image";
 //import images
-import cardinalites_multiplicites from "../assets/img/cardinalites_Multiplicites.jpg";
+import cardinalites_multiplicites from "../assets/img/cardinalites_multiplicites.jpg";
 
 const Cheatsheet = () => {
 	return (
