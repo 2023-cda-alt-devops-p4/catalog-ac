@@ -4,7 +4,7 @@ import { theme } from "../assets/css/theme";
 
 import Image from "../components/Image";
 //import images
-import cardinalites_Multiplicites from "../assets/img/cardinalites_Multiplicites.jpg";
+import cardinalites_multiplicites from "../assets/img/cardinalites_Multiplicites.jpg";
 
 const Cheatsheet = () => {
 	return (
@@ -24,8 +24,8 @@ const Cheatsheet = () => {
 			</p>
 			<div className="container_img">
 				<Image
-					src={cardinalites_Multiplicites}
-					alt="cardinalites_Multiplicites"
+					src={cardinalites_multiplicites}
+					alt="cardinalites_multiplicites"
 				/>
 			</div>
 		</CheatsheetStyled>
