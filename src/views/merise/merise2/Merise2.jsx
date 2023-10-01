@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { theme } from "../../../assets/css/theme";
 import { FaCircleArrowUp } from "react-icons/fa6";
 
-// import Image from "../../../components/Image";
-// //import images
-// import cardinalites_Multiplicites from "../../../assets/img/cardinalites_Multiplicites.jpg";
+import Image from "../../../components/Image";
+//import images
+// import merise_niveaux from "../../../assets/img/merise_niveaux.png";
+// import merise_decoupage_niveaux from "../../../assets/img/merise_decoupage_niveaux.png";
 
 const Merise2 = () => {
 	const scrollToTop = () => {

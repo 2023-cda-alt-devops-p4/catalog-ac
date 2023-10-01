@@ -5,7 +5,7 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 
 import Image from "../../../components/Image";
 //import images
-// import merise_niveaux from "../../../assets/img/merise_niveaux.png";
+import classes_objets from "../../../assets/img/uml/classes_objets.png";
 // import merise_decoupage_niveaux from "../../../assets/img/merise_decoupage_niveaux.png";
 
 const Uml1 = () => {
@@ -17,6 +17,28 @@ const Uml1 = () => {
 		<MenuStyled>
 			<div className="outlet">
 				<h1>Concepts importants de l’approche objet</h1>
+				<h2>3 façons d’utiliser UML selon Fowler (2003)</h2>
+				<h4>- Mode esquisse (méthodes Agile) :</h4>
+				<div>
+					<p>Diagrammes tracés à la main, informels et incomplets ; </p>
+					<p>Support de communication pour concevoir les parties critiques</p>
+				</div>
+				<h4>- Mode plan :</h4>
+				<div>
+					<p>Diagrammes formels relativement détaillés</p>
+					<p>Annotations en langue naturelle ; </p>
+					<p>Génération d’un squelette de code à partir des diagrammes ;</p>
+					<p> Nécessité de compléter le code pour obtenir un exécutable </p>
+				</div>
+				<h4>- Mode programmation (Model Driven Architecture / MDA) : </h4>
+				<div>
+					<p>Spécification complète et formelle en UML ;</p>
+					<p>
+						Génération automatique d’un exécutable à partir des diagrammes ;{" "}
+					</p>
+					<p>Limité à des applications bien particulières ;</p>
+				</div>{" "}
+				<h2>Relations entre les classes</h2>
 				<p>
 					Tout d'abord, introduisons la notion de classe. Une classe est un type
 					de données abstrait qui précise des caractéristiques (attributs et
@@ -25,13 +47,6 @@ const Uml1 = () => {
 					concepts importants qu'il nous faut maintenant introduire sont
 					l'encapsulation, l'héritage et l'agrégation.
 				</p>
-				<div className="container_img">
-					<Image
-						// src={}
-						alt=""
-					/>
-				</div>
-				<h2>Relations entre les classes</h2>
 				<p>
 					Ces relations ne sont pas propres aux diagrammes de classes, elles
 					peuvent également s'appliquer à l'ensemble des diagrammes statiques.
@@ -114,7 +129,9 @@ const Uml1 = () => {
 					noTelephones[2] à noTelephone1 et noTelephone2.
 				</p>
 				<div>
-					<div className="container_img">{/* <Image src={} alt="" /> */}</div>
+					<div className="container_img">
+						{<Image src={classes_objets} alt="classes_objets" />}
+					</div>
 				</div>
 				<p></p>
 				<em></em>
@@ -127,8 +144,13 @@ const Uml1 = () => {
 };
 
 const MenuStyled = styled.div`
+	.outlet h4 + div {
+		font-size: ${theme.fonts.XS};
+		margin: 0.5vh 2vw;
+	}
+
 	/* .iconScroll {
-		color: ${theme.colors.kumquat};
+	
 		font-size: 3rem;
 		position: fixed;
 		bottom: 13vh;
