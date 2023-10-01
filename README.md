@@ -11,10 +11,4 @@ par Audrey Carpentier_
 - avoir une méthode à suivre pour chacun de ces schémas, surtout pour les plus importants.
 
 
-<img src="https://res.cloudinary.com/dp28uacxh/image/upload/v1696196108/Simplon_catalog/catalog_mobile_version_screen.png" alt="mobile_home" width="200" /> 
-
-
-<video width="200" autoplay>
-  <source src="https://res.cloudinary.com/dp28uacxh/video/upload/v1696196089/Simplon_catalog/catalog_mobile_version_video.mp4" type="video/mp4">
-  Votre navigateur ne prend pas en charge la lecture de cette vidéo.
-</video>
+[![Vidéo de démonstration](https://res.cloudinary.com/dp28uacxh/image/upload/c_scale,w_200/v1696196108/Simplon_catalog/catalog_mobile_version_screen.png)](https://res.cloudinary.com/dp28uacxh/video/upload/v1696196089/Simplon_catalog/catalog_mobile_version_video.mp4)
