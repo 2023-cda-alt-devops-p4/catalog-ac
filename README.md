@@ -10,7 +10,11 @@ par Audrey Carpentier_
 - avoir une ressource centralisée avec une vision d'ensemble de tous les diagrammes UML - et de tous ceux qui appartiennent à la méthode MERISE. 
 - avoir une méthode à suivre pour chacun de ces schémas, surtout pour les plus importants.
 
-<!-- ![screen version mobile](/catalog-Audrey-Carpentier/src/assets/img/screen/mobile_home.png "mobile_home")
 
-<img src="/catalog-Audrey-Carpentier/src/assets/img/screen/mobile_home.png" alt="mobile_home" width="200" height="350" /> -->
+<img src="https://res.cloudinary.com/dp28uacxh/image/upload/v1696196108/Simplon_catalog/catalog_mobile_version_screen.png" alt="mobile_home" width="200" /> 
 
+
+<video width="200" autoplay>
+  <source src="https://res.cloudinary.com/dp28uacxh/video/upload/v1696196089/Simplon_catalog/catalog_mobile_version_video.mp4" type="video/mp4">
+  Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+</video>
