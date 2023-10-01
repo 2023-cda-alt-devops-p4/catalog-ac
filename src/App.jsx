@@ -160,6 +160,13 @@ const AppStyled = styled.div`
 		margin-left: 20px;
 	}
 
+	.outlet ol {
+		padding: ${theme.spacing.xs};
+		list-style-type: circle;
+		list-style-position: inside;
+		margin-left: 20px;
+	}
+
 	.outlet li {
 		padding: ${theme.spacing.xs};
 	}

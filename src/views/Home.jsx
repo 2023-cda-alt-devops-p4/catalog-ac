@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { theme } from "../assets/css/theme";
+import { Link } from "react-router-dom";
 
 import Image from "../components/Image";
 //import images
 import sheldon from "../assets/img/sheldon.gif";
-import { Link } from "react-router-dom";
+
 
 // imsc snippet
 

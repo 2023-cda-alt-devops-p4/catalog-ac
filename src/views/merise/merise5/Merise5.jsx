@@ -16,27 +16,36 @@ const Merise5 = () => {
 		<MenuStyled>
 			<div className="outlet">
 				<h1>LE MLD - MODELE LOGIQUE DES DONNEES</h1>
-				<h2>sous titre h2</h2>
-				<h3>sous titre h3</h3>
-				<h4>sous titre h4</h4>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
+				<h3>
+					Le M.L.D. constitue une étape intermédiaire entre le M.C.D. et le
+					M.P.D. (modèle physique) directement implémenté sur la machine cible.
+				</h3>
+				<p>
+					Le niveau logique représente le dernier niveau validé par
+					l'utilisateur final (sauf si celui-ci réalise la programmation). Il
+					comprend une vue de l’utilisateur de l'informatique (vue externe de
+					l'informatique) et une vue plus spécifique (vue interne).{" "}
+				</p>
+				<p>
+					Le M.C.D. est indépendant de l'organisation informatique de
+					l'entreprise. Il ne prend pas en compte, par exemple, les systèmes
+					d'exploitation utilisés (MS-Dos, Windows, Linux, ...), les langages de
+					programmation ou même les logiciels disponibles sur ces systèmes.{" "}
+				</p>
 
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<h4>
+					Il s'agit donc pour le M.L.D. de déterminer la structure générale des
+					informations à stocker dans le système informatique.
+				</h4>
 
-				<div>
-					<div className="container_img">{/* <Image src={} alt="" /> */}</div>
-				</div>
-				<p></p>
-				<em></em>
+				<p>
+					Il s'agit de faire correspondre les entités et les relations porteuses
+					du M.C.D. avec des fichiers (ou tables logiques).{" "}
+				</p>
+				<p>
+					Un premier MLD se déduit d'un MOD (Modèle Organisationnel de Données).
+				</p>
+
 				<div className="iconScroll">
 					<FaCircleArrowUp onClick={scrollToTop} />
 				</div>

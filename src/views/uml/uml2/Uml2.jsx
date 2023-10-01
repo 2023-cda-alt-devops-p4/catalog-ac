@@ -5,7 +5,6 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 
 import Image from "../../../components/Image";
 //import images
-// import classes_objets from "../../../assets/img/uml/classes_objets.png";
 import uml14 from "../../../assets/img/uml/uml14.png";
 import why_uml from "../../../assets/img/uml/why_uml.png";
 

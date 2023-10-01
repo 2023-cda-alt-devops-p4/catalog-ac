@@ -16,27 +16,22 @@ const Merise6 = () => {
 		<MenuStyled>
 			<div className="outlet">
 				<h1>Règles de Passage du MLD au MPD</h1>
-				<h2>sous titre h2</h2>
-				<h3>sous titre h3</h3>
-				<h4>sous titre h4</h4>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-
+			
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>Tout enregistrement logique devient une table. </li>
+					<li>
+						2 chemins à N arrivées entre 2 enregistrements logiques deviennent
+						trois tables. Deux chemins logiques provenant d'une relation binaire
+						X,N, X,N non porteuse d'informations se transforment donc en une
+						table. N N Enregistrement logique 1 Enregistrement logique 2 clé1
+						clé2 Table 1 Table 3 Table 2 clé1 clé2 clé1, clé2
+					</li>
+					<li>
+						1 chemin à 1 arrivée entre 2 enregistrements logiques redonde une
+						clé, à indexer le plus souvent, dans la table de départ
+					</li>
+					
 				</ul>
-
-				<div>
-					<div className="container_img">{/* <Image src={} alt="" /> */}</div>
-				</div>
-				<p></p>
-				<em></em>
 				<div className="iconScroll">
 					<FaCircleArrowUp onClick={scrollToTop} />
 				</div>

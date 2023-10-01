@@ -81,27 +81,19 @@ const MeriseStyled = styled.div`
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
 
 	@media (min-width: 1024px) {
-		/* .img_catalog {
-			max-width: 80vw;
-		} */
+	
 	}
 
 	@media (max-width: 1023px) {
-		/* .img_catalog {
-			max-width: 70vw;
-		} */
+		
 	}
 
 	@media (max-width: 780px) {
-		/* .img_catalog {
-			max-width: 60vw;
-		} */
+	
 	}
 
 	@media (max-width: 300px) {
-		/* .img_catalog {
-			max-width: 30vw;
-		} */
+		
 	}
 `;
 export default Merise1;

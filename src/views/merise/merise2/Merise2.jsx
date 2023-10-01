@@ -38,14 +38,7 @@ const Merise2 = () => {
 							dépendances fonctionnelles sont représentées sous la forme du GDF
 							(Graphe de Dépendances Fonctionnelles).
 						</li>
-						<li>
-							dépendances fonctionnelles
-							http://www.colar.net/as/cours/analyse/ddf.html#dfdc
-						</li>
-						<li>
-							formes normales http://www.colar.net/as/cours/analyse/ddf1.html
-						</li>
-						<li>
+											<li>
 							L'élaboration du MCD (création des entités puis des associations
 							puis ajout des cardinalités).
 						</li>
