@@ -5,6 +5,7 @@ import { theme } from "../assets/css/theme";
 import Image from "../components/Image";
 //import images
 
+
 const Cheatsheet = () => {
 	return (
 		<CheatsheetStyled>
@@ -27,6 +28,7 @@ const Cheatsheet = () => {
 					alt=""
 				/>
 			</div> */}
+
 		</CheatsheetStyled>
 	);
 };
