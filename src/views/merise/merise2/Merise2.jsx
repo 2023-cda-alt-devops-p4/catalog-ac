@@ -18,12 +18,6 @@ const Merise2 = () => {
 				<h1>
 					Vers une modélisation des Données (niveau Conceptuel) + cardinalités
 				</h1>
-				{/* <div className="container_img">
-					<Image
-						src={cardinalites_Multiplicites}
-						alt="cardinalites_Multiplicites"
-					/>
-				</div> */}
 				<p>
 					Il s'agit de l'élaboration du Modèle Conceptuel des Données (MCD) qui
 					est une représentation graphique et structurée des informations

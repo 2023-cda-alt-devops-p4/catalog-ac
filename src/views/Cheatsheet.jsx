@@ -4,8 +4,7 @@ import { theme } from "../assets/css/theme";
 
 import Image from "../components/Image";
 //import images
-// import cardinalites_multiplicites from "../assets/img/cardinalites_multiplicites.jpg";
-import mcdcomplet from "../assets/img/mcdcomplet.gif";
+
 
 const Cheatsheet = () => {
 	return (
@@ -25,16 +24,11 @@ const Cheatsheet = () => {
 			</p>
 			{/* <div className="container_img">
 				<Image
-					src={cardinalites_multiplicites}
-					alt="cardinalites_multiplicites"
+					src={}
+					alt=""
 				/>
 			</div> */}
-			<div className="container_img">
-				<Image
-					src={mcdcomplet}
-					alt="mcdcomplet"
-				/>
-			</div>
+
 		</CheatsheetStyled>
 	);
 };

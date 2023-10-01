@@ -84,8 +84,12 @@ const Uml2 = () => {
 				</p>
 				<p></p>
 				<p></p>
-				<p></p>
-				<p></p>
+				{/* <div className="container_img">
+					<Image
+						src={}
+						alt=""
+					/>
+				</div> */}
 				<div>
 					<div className="container_img">{/* <Image src={} alt="" /> */}</div>
 				</div>
