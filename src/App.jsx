@@ -8,15 +8,25 @@ import Home from "./views/Home";
 import Cheatsheet from "./views/Cheatsheet";
 import Ressources from "./views/Ressources";
 import Page404 from "./views/Page404";
+import Footer from "./components/Footer";
 
 import Uml from "./views/Uml.jsx";
-import Uml1 from "./views/uml/uml1/Uml1.jsx";
-import Uml2 from "./views/uml/uml2/Uml2.jsx";
+import Uml1 from "./views/uml/uml1/Uml1";
+import Uml2 from "./views/uml/uml2/Uml2";
+import Uml3 from "./views/uml/uml3/Uml3";
+import Uml4 from "./views/uml/uml4/Uml4";
+import Uml5 from "./views/uml/uml5/Uml5";
 
 import Merise from "./views/Merise";
 import Merise1 from "./views/merise/merise1/Merise1";
 import Merise2 from "./views/merise/merise2/Merise2";
-import Footer from "./components/Footer";
+import Merise3 from "./views/merise/merise3/Merise3";
+import Merise4 from "./views/merise/merise4/Merise4";
+import Merise5 from "./views/merise/merise5/Merise5";
+import Merise6 from "./views/merise/merise6/Merise6";
+import Merise7 from "./views/merise/merise7/Merise7";
+import Merise8 from "./views/merise/merise8/Merise8";
+
 
 function App() {
 	return (
@@ -31,10 +41,19 @@ function App() {
 						<Route path="/uml" element={<Uml />}>
 							<Route path="/uml/uml1" element={<Uml1 />} />
 							<Route path="/uml/uml2" element={<Uml2 />} />
+							<Route path="/uml/uml3" element={<Uml3 />} />
+							<Route path="/uml/uml4" element={<Uml4 />} />
+							<Route path="/uml/uml5" element={<Uml5 />} />
 						</Route>
 						<Route path="/merise" element={<Merise />}>
 							<Route path="/merise/merise1" element={<Merise1 />} />
 							<Route path="/merise/merise2" element={<Merise2 />} />
+							<Route path="/merise/merise3" element={<Merise3 />} />
+							<Route path="/merise/merise4" element={<Merise4 />} />
+							<Route path="/merise/merise5" element={<Merise5 />} />
+							<Route path="/merise/merise6" element={<Merise6 />} />
+							<Route path="/merise/merise7" element={<Merise7 />} />
+							<Route path="/merise/merise8" element={<Merise8 />} />
 						</Route>
 						<Route path="/ressources" element={<Ressources />} />
 						<Route path="*" element={<Page404 />} />
@@ -96,6 +115,15 @@ const AppStyled = styled.div`
 		color: ${theme.colors.darkMint};
 	}
 
+	h4 {
+		margin-top: ${theme.spacing.sm};
+		padding: ${theme.spacing.xs};
+		font-weight: ${theme.weights.bold};
+		font-family: ${theme.fontFamily.fontTitle}, arial;
+		font-size: ${theme.fonts.P0};
+		color: ${theme.colors.semiDarkOrange};
+	}
+
 	.outlet {
 		background-color: ${theme.colors.vanilla};
 		padding: ${theme.spacing.md};
@@ -155,13 +183,15 @@ const AppStyled = styled.div`
 	.container_img {
 		display: flex;
 		justify-content: center;
+		/* width: 30vw; */
 	}
 
 	img {
-		width: 50vw;
+		width: 40vw;
 		box-shadow: 5px 5px 10px ${theme.colors.darkMint};
 		border-radius: ${theme.borderRadius.round};
 		object-fit: cover;
+		margin-bottom: 1vh;
 	}
 
 	.imgZoom {

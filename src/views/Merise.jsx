@@ -9,7 +9,6 @@ import Image from "../components/Image";
 import mcdcomplet from "../assets/img/mcdcomplet.gif";
 
 const Merise = () => {
-	
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
@@ -19,9 +18,7 @@ const Merise = () => {
 			<section className="row_section">
 				<ul className="left_column">
 					<li>
-						<Link to="/merise/merise1">
-							Concepts de bases
-						</Link>
+						<Link to="/merise/merise1">Concepts de bases</Link>
 					</li>
 					<li>
 						<Link to="/merise/merise2">
@@ -29,29 +26,28 @@ const Merise = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/merise/merise2">
+						<Link to="/merise/merise3">
 							Le MCD - MODELE CONCEPTUEL DES DONNEES
 						</Link>
 					</li>
 					<li>
-						<Link to="/merise/merise1">Règles de Passage du MCD au MLD </Link>
+						<Link to="/merise/merise4">Règles de Passage du MCD au MLD</Link>
 					</li>
 					<li>
-						<Link to="/merise/merise2">
+						<Link to="/merise/merise5">
 							LE MLD - MODELE LOGIQUE DES DONNEES
 						</Link>
 					</li>
 					<li>
-						<Link to="/merise/merise1">Règles de Passage du MLD au MPD </Link>
+						<Link to="/merise/merise6">Règles de Passage du MLD au MPD</Link>
 					</li>
 					<li>
-						<Link to="/merise/merise2">
+						<Link to="/merise/merise7">
 							LE MPD - MODELE PHYSIQUE DES DONNEES
 						</Link>
 					</li>
 					<li>
-						{" "}
-						<Link to="/merise/merise1">Normalisation & lexique</Link>
+						<Link to="/merise/merise8">Normalisation & lexique</Link>
 					</li>
 				</ul>
 
@@ -78,7 +74,6 @@ const Merise = () => {
 		</MenuStyled>
 	);
 };
-
 
 const MenuStyled = styled.div`
 	.row_section {
@@ -123,7 +118,7 @@ const MenuStyled = styled.div`
 		width: 70vw;
 		height: auto;
 	}
-	
+
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
 	/*//! -- MEDIA QUERIES --★゜・。。・゜゜・。。・゜☆゜・。。・゜゜・。。・゜★゜・。。・゜゜・。。・゜☆ */
 	/* -▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼･ェ･▼- */
@@ -164,8 +159,6 @@ const MenuStyled = styled.div`
 	}
 
 	@media (max-width: 300px) {
-	
-
 	}
 `;
 

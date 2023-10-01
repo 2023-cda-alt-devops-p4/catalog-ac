@@ -5,16 +5,17 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 
 import Image from "../../../components/Image";
 //import images
-// import classes_objets from "../../../assets/img/uml/classes_objets.png";
+// import merise_niveaux from "../../../assets/img/merise_niveaux.png";
+// import merise_decoupage_niveaux from "../../../assets/img/merise_decoupage_niveaux.png";
 
-const Uml5 = () => {
+const Merise5 = () => {
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
 	return (
 		<MenuStyled>
 			<div className="outlet">
-				<h1>Diagramme de séquence</h1>
+				<h1>LE MLD - MODELE LOGIQUE DES DONNEES</h1>
 				<h2>sous titre h2</h2>
 				<h3>sous titre h3</h3>
 				<h4>sous titre h4</h4>
@@ -45,4 +46,4 @@ const Uml5 = () => {
 };
 
 const MenuStyled = styled.div``;
-export default Uml5;
+export default Merise5;

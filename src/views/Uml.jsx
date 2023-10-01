@@ -47,6 +47,22 @@ const Uml = () => {
 					<em>Attention : UML est un langage... pas une méthode </em>
 					<p>Version 1.0 d’UML (Unified Modeling Language) en janvier 1997</p>
 					<p>Version 2.5.1 en 2017</p>
+
+
+					<h3>Décrire la structure du système en termes de : </h3>
+					<p>
+						Composants du système ; Objets, Classes, Paquetages, Composants, ...{" "}
+					</p>
+					<p>
+						Relations entre ces composants ; Spécialisation, Association,
+						Dépendance, ... ;
+					</p>
+					<p>Pas de facteur temps</p>
+					<h3>Pourquoi une structuration orientée objet ?</h3>
+
+					<p>Unicité et universalité du paradigme </p>
+					<p>Réduire le décalage entre monde réel et logiciel ; </p>
+					<p>Objets réels ⇒ Objets conceptuels ⇒ Objets logiciels </p>
 				</div>
 				<div className="iconScroll">
 					<FaCircleArrowUp onClick={scrollToTop} />
@@ -67,7 +83,7 @@ const MenuStyled = styled.div`
 	}
 
 	.left_column {
-		width: 35vw;
+		width: 20vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -90,6 +106,16 @@ const MenuStyled = styled.div`
 		color: ${theme.colors.white_peach};
 		box-shadow: 5px 5px 10px ${theme.colors.semiDarkAmber};
 		padding: ${theme.spacing.xxs};
+	}
+
+	.right_column {
+		padding: ${theme.spacing.sm};
+		display: flex;
+		flex-direction: column;
+		/* align-items: center; */
+		gap: 5px;
+		width: 90vw;
+		height: auto;
 	}
 
 	/* :–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–:*:–☆–: */
