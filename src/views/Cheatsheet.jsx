@@ -6,6 +6,7 @@ import Image from "../components/Image";
 //import images
 // import sheldon from "../assets/img/sheldon.gif";
 
+
 const Cheatsheet = () => {
 	const scrollToTop = () => {
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -22,6 +23,7 @@ const Cheatsheet = () => {
 				{/* <div className="container_img_mini">
 				{<Image src={} alt="" />}
 			</div> */}
+
 				<h2>MERISE</h2>
 
 				<ul className="ul_cheatsheet">
