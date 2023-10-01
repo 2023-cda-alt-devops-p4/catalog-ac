@@ -27,7 +27,6 @@ import Merise6 from "./views/merise/merise6/Merise6";
 import Merise7 from "./views/merise/merise7/Merise7";
 import Merise8 from "./views/merise/merise8/Merise8";
 
-
 function App() {
 	return (
 		<AppStyled>
@@ -183,18 +182,19 @@ const AppStyled = styled.div`
 	.container_img {
 		display: flex;
 		justify-content: center;
-		/* width: 30vw; */
 	}
 
-	img {
-		width: 40vw;
-		box-shadow: 5px 5px 10px ${theme.colors.darkMint};
-		border-radius: ${theme.borderRadius.round};
-		object-fit: cover;
-		margin-bottom: 1vh;
+	.container_img_mini {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.imgZoom {
+	.container_img_mini img {
+		width: 20vw;
+	}
+
+	.container_img_mini .imgZoom {
 		position: fixed;
 		z-index: 100;
 		box-shadow: 5px 5px 10px ${theme.colors.darkMint};
@@ -204,7 +204,7 @@ const AppStyled = styled.div`
 		left: 50%;
 		transform: translate(-50%, -50%);
 		object-fit: contain;
-		width: 90vw;
+		width: 70vw;
 	}
 
 	p {

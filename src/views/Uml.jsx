@@ -6,6 +6,8 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 import Image from "../components/Image";
 //import images
 import diagrammes_uml from "../assets/img/uml/diagrammes_uml.svg";
+import modele_elements_uml from "../assets/img/uml/modele_elements_uml.png";
+import structure_uml_objets from "../assets/img/uml/structure_uml_objets.jpg";
 
 const Uml = () => {
 	const scrollToTop = () => {
@@ -31,6 +33,12 @@ const Uml = () => {
 					<li>
 						<Link to="/uml/uml5">Diagramme de séquence</Link>
 					</li>
+					<div className="container_img_mini">
+						<Image src={modele_elements_uml} alt="modele_elements_uml" />
+					</div>
+					<div className="container_img_mini">
+						<Image src={structure_uml_objets} alt="structure_uml_objets" />
+					</div>
 				</ul>
 
 				<div className="right_column">
@@ -47,22 +55,6 @@ const Uml = () => {
 					<em>Attention : UML est un langage... pas une méthode </em>
 					<p>Version 1.0 d’UML (Unified Modeling Language) en janvier 1997</p>
 					<p>Version 2.5.1 en 2017</p>
-
-
-					<h3>Décrire la structure du système en termes de : </h3>
-					<p>
-						Composants du système ; Objets, Classes, Paquetages, Composants, ...{" "}
-					</p>
-					<p>
-						Relations entre ces composants ; Spécialisation, Association,
-						Dépendance, ... ;
-					</p>
-					<p>Pas de facteur temps</p>
-					<h3>Pourquoi une structuration orientée objet ?</h3>
-
-					<p>Unicité et universalité du paradigme </p>
-					<p>Réduire le décalage entre monde réel et logiciel ; </p>
-					<p>Objets réels ⇒ Objets conceptuels ⇒ Objets logiciels </p>
 				</div>
 				<div className="iconScroll">
 					<FaCircleArrowUp onClick={scrollToTop} />

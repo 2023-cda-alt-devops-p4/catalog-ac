@@ -6,6 +6,7 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 import Image from "../../../components/Image";
 //import images
 import usecase_diagram from "../../../assets/img/uml/usecase_diagram.png";
+import usecase_diagram_simple from "../../../assets/img/uml/usecase_diagram_simple.png";
 
 const Uml3 = () => {
 	const scrollToTop = () => {
@@ -25,10 +26,13 @@ const Uml3 = () => {
 					fonctionnalités d'un système. Il s'agit donc de la première étape UML
 					d'analyse d'un système.
 				</p>
+				<div className="container_img">
+						{<Image src={usecase_diagram_simple} alt="usecase_diagram_simple" />}
+					</div>
 				<h2>Trois types de relations : </h2>
 				<ol>
 					<li>
-						- Généralisation : ———— ou spécialisation.
+						- Généralisation : ————&gt; ou spécialisation.
 						<p>
 							Le cas d'utilisation A est une généralisation de B, si B est un
 							cas particulier de A c'est-à-dire lorsque A peut être substitué
@@ -36,19 +40,19 @@ const Uml3 = () => {
 						</p>
 					</li>
 					<li>
-						- Inclusion : - - - - - «include» - - - - - i
+						- Inclusion : - - - - - «include» - - - - -&gt; i
 						<p>
 							inclut le second et son issue dépend souvent de la résolution du
 							second.
 						</p>
 					</li>
 					<li>
-						- Extension : - - - - - «extend» - - - - -
+						- Extension : - - - - - «extend» - - - - -&gt;
 						<p>
 													(préciser la condition) prolongements logiques de la tâche A pdt B
 						</p>
 					</li>
-					<li>A utiliser avec modération </li>
+					<li>&gt; A utiliser avec modération </li>
 								</ol>
 
 				<p>
@@ -65,11 +69,11 @@ const Uml3 = () => {
 					association représentée par une ligne.
 				</p>
 
-				<div>
+		
 					<div className="container_img">
 						{<Image src={usecase_diagram} alt="usecase_diagram" />}
 					</div>
-				</div>
+			
 
 				<div className="iconScroll">
 					<FaCircleArrowUp onClick={scrollToTop} />

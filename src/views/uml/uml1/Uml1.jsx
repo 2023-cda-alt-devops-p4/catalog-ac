@@ -5,8 +5,7 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 
 import Image from "../../../components/Image";
 //import images
-import classes_objets from "../../../assets/img/uml/classes_objets.png";
-// import merise_decoupage_niveaux from "../../../assets/img/merise_decoupage_niveaux.png";
+// import classes_objets from "../../../assets/img/uml/classes_objets.png";
 
 const Uml1 = () => {
 	const scrollToTop = () => {
@@ -128,11 +127,11 @@ const Uml1 = () => {
 					personne possède deux numéros de téléphone, on préfèrera
 					noTelephones[2] à noTelephone1 et noTelephone2.
 				</p>
-				<div>
-					<div className="container_img">
+			
+					{/* <div className="container_img">
 						{<Image src={classes_objets} alt="classes_objets" />}
-					</div>
-				</div>
+					</div> */}
+			
 				<p></p>
 				<em></em>
 				<div className="iconScroll">

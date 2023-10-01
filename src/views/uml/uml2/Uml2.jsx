@@ -6,9 +6,8 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 import Image from "../../../components/Image";
 //import images
 // import classes_objets from "../../../assets/img/uml/classes_objets.png";
-
-// import merise_niveaux from "../../../assets/img/merise_niveaux.png";
-// import merise_decoupage_niveaux from "../../../assets/img/merise_decoupage_niveaux.png";
+import uml14 from "../../../assets/img/uml/uml14.png";
+import why_uml from "../../../assets/img/uml/why_uml.png";
 
 const Uml2 = () => {
 	const scrollToTop = () => {
@@ -37,6 +36,13 @@ const Uml2 = () => {
 					façon à permettre la modélisation d'un projet tout au long de son
 					cycle de vie. Il en existe quatorze depuis UML 2.3.
 				</h4>
+				<div className="container_img">
+					<Image
+						src={why_uml}
+						alt="why_uml"
+					/>
+				</div> 
+
 				<h2>Diagrammes de structure ou diagrammes statiques</h2>
 				<ul>
 					<li>Diagrammes d’objets (object diagram) </li>
@@ -84,12 +90,12 @@ const Uml2 = () => {
 				</p>
 				<p></p>
 				<p></p>
-				{/* <div className="container_img">
+			 <div className="container_img">
 					<Image
-						src={}
-						alt=""
+						src={uml14}
+						alt="uml14"
 					/>
-				</div> */}
+				</div> 
 				<div>
 					<div className="container_img">{/* <Image src={} alt="" /> */}</div>
 				</div>
