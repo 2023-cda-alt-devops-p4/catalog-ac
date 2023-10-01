@@ -54,11 +54,11 @@ const Ressources = () => {
 							</em>
 						</a>
 					</li>
-					{/* <li>
-						<a href="" target="_blank">
-							[PDF] <em></em>
+					<li>
+						<a href="https://laurent-audibert.developpez.com/Cours-UML/" target="_blank">
+							[Site - laurent-audibert] <em>UML 2 - de l'apprentissage à la pratique (developpez.com)</em>
 						</a>
-					</li> */}
+					</li>
 					{/* <li>
 						<a href="" target="_blank">
 							[PDF] <em></em>

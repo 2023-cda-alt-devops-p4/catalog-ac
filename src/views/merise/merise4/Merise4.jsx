@@ -16,22 +16,65 @@ const Merise4 = () => {
 		<MenuStyled>
 			<div className="outlet">
 				<h1>Règles de Passage du MCD au MLD</h1>
-				<h2>sous titre h2</h2>
-				<h3>sous titre h3</h3>
-				<h4>sous titre h4</h4>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
+
+				<h3>Une association binaire de plusieurs à plusieurs devient :</h3>
 
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>Une nouvelle table</li>
+					<li>
+						La clé primaire est constituée des clés primaires des deux entités{" "}
+					</li>
+					<li>
+						Chacun des attributs de la clé primaire est lui même clé étrangère{" "}
+					</li>
+					<li>
+						Les propriétés de l’association deviennent des attributs de la
+						nouvelle table{" "}
+					</li>
 				</ul>
+				<h4>
+					Pour réaliser un M.L.D, il faut tenir compte des cardinalités des
+					associations :
+				</h4>
+				<ul>
+					<li>Toute entité se transforme en fichier (ou table logique).</li>
+					<li>
+						Pour les associations non porteuses d'information, on distingue
+						trois cas en fonction des cardinalités
+					</li>
 
+					<ol>
+						<li>
+							<em>0,1 ou 1,1 ---association --- 0,n ou 1,n :</em>
+							Une commande est passée par un seul client. un client peut avoir
+							passé 0 ou n commandes. Il est donc nécessaire de dupliquer dans
+							la table COMMANDE l'identifiant de l'entité CLIENT.
+						</li>
+						<li>
+							<em>0,n ou 1,n --- association --- 0,n ou 1,n :</em>
+							Une commande se compose d'au moins un produit, un produit fait
+							partie d'un nombre quelconque de commandes. Il faut pouvoir
+							déterminer, pour chaque commande, les produits associés.
+							L'association se transforme en fichier logique où sont dupliqués
+							les identifiants des deux entités.
+						</li>
+						<li>
+							<em>0,1 ou 1,1 --- association --- 0,1 ou 1,1 :</em>Il est
+							nécessaire de dupliquer dans chaque fichier logique, l'identifiant
+							de l'entité en association.
+						</li>
+					</ol>
+
+					<li>
+						Les associations porteuses d'informations se transforment en table
+						selon la règle suivante : par exemple pour une quantité donnée, il
+						faut connaître le N° commande et le N° produit. Un fichier logique
+						est créé pour l'association et les identifiants des entités sont
+						dupliqués.
+					</li>
+				</ul>
+				<p></p>
+				<p></p>
 				<div>
 					<div className="container_img">{/* <Image src={} alt="" /> */}</div>
 				</div>

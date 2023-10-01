@@ -5,8 +5,8 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 
 import Image from "../../../components/Image";
 //import images
-import classes_objets from "../../../assets/img/uml/classes_objets.png";
-// import merise_decoupage_niveaux from "../../../assets/img/merise_decoupage_niveaux.png";
+import modele_elements_uml from "../../../assets/img/uml/modele_elements_uml.png";
+import structure_uml_objets from "../../../assets/img/uml/structure_uml_objets.jpg";
 
 const Uml1 = () => {
 	const scrollToTop = () => {
@@ -17,6 +17,9 @@ const Uml1 = () => {
 		<MenuStyled>
 			<div className="outlet">
 				<h1>Concepts importants de l’approche objet</h1>
+				<div className="container_img">
+					{<Image src={structure_uml_objets} alt="structure_uml_objets" />}
+				</div>
 				<h2>3 façons d’utiliser UML selon Fowler (2003)</h2>
 				<h4>- Mode esquisse (méthodes Agile) :</h4>
 				<div>
@@ -128,10 +131,8 @@ const Uml1 = () => {
 					personne possède deux numéros de téléphone, on préfèrera
 					noTelephones[2] à noTelephone1 et noTelephone2.
 				</p>
-				<div>
-					<div className="container_img">
-						{<Image src={classes_objets} alt="classes_objets" />}
-					</div>
+				<div className="container_img">
+					{<Image src={modele_elements_uml} alt="modele_elements_uml" />}
 				</div>
 				<p></p>
 				<em></em>
