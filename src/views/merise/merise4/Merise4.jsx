@@ -64,9 +64,9 @@ const Merise4 = () => {
 							de l'entité en association.
 						</li>
 						<li>
-							la table qui a le <bold>poids faible</bold> accueille l'id de l'autre table.
-							Exemple : entre User &rarr; 1,n "créer" 1.1 &larr; Log = dans la
-							table Log, mettre l'id de User
+							la table qui a le<em>poids faible</em>accueille l'id de l'autre
+							table. Exemple : entre <em>User</em> &rarr; 1,n ["créer"] 1.1
+							&larr; <em>Log</em> = dans la table Log, mettre l'id de User
 						</li>
 					</ol>
 
