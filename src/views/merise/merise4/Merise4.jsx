@@ -63,6 +63,11 @@ const Merise4 = () => {
 							nécessaire de dupliquer dans chaque fichier logique, l'identifiant
 							de l'entité en association.
 						</li>
+						<li>
+							la table qui a le <bold>poids faible</bold> accueille l'id de l'autre table.
+							Exemple : entre User &rarr; 1,n "créer" 1.1 &larr; Log = dans la
+							table Log, mettre l'id de User
+						</li>
 					</ol>
 
 					<li>
